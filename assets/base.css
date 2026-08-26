@@ -170,3 +170,28 @@ body.has-floatbar { padding-bottom: 84px; }
   .floatbar__t { white-space: normal; font-size: .8rem; }
   .floatbar .btn { padding: .75rem .95rem; font-size: .84rem; }
 }
+
+/* ============================================================
+   Embedded news video — responsive 16:9, privacy-enhanced host
+   ============================================================ */
+.vid { margin-block: 2.4rem; }
+.vid__head { display: flex; align-items: center; gap: .7rem; margin-bottom: .9rem; flex-wrap: wrap; }
+.vid__tag {
+  padding: .32rem .68rem; border-radius: 4px; flex: 0 0 auto;
+  background: var(--alert); color: #fff;
+  font: 800 .64rem/1 var(--sans); letter-spacing: .14em; text-transform: uppercase;
+}
+.vid__t { font: 700 1.02rem/1.35 var(--sans); letter-spacing: -.014em; }
+.vid__frame {
+  position: relative; aspect-ratio: 16 / 9;
+  border-radius: var(--r-md); overflow: hidden;
+  background: #000; box-shadow: var(--sh-2);
+}
+.vid__frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.vid__credit { margin-top: .75rem; font: 500 .78rem/1.55 var(--sans); color: var(--muted); }
+.vid__credit a { color: inherit; text-underline-offset: 2px; }
+.vid__credit em { font-style: normal; display: block; margin-top: .25rem; opacity: .85; }
+
+/* on dark backgrounds */
+.vid--dark .vid__t { color: #fff; }
+.vid--dark .vid__credit { color: #93a0b5; }

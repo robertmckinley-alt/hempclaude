@@ -78,6 +78,23 @@ nothing needs inventing. Specifically:
 - Statutory claims are cited and independently verifiable. The comparison table on `sale.html`
   is explicitly labeled as reflecting reported user experience rather than clinical trial data.
 
+## Embedded video
+
+All three pages embed The Hill's report *"Federal THC Ban Sends Hemp Companies Scrambling"*
+(YouTube `Pj7OqIDjmEg`) as third-party corroboration of the deadline:
+
+- **explainer.html** — between the definition table and the 0.4mg arithmetic
+- **sale.html** — dedicated "Don't take our word for it" section under the countdown
+- **advertorial.html** — after the stat row, before the countdown box
+
+Served from `youtube-nocookie.com` with `loading="lazy"`, so it sets no cookies and costs
+nothing on first paint until the viewer clicks play.
+
+Every instance carries the line: *"The Hill is an independent news organisation. It is not
+affiliated with, and does not endorse, any product referenced on this page."* Keep it. Using
+news footage inside an ad without it invites an implied-endorsement claim, which is a
+different and worse problem than an ordinary affiliate disclosure.
+
 ## Assets
 
 Hero imagery generated with FLUX1.1 [pro] ultra via fal.ai and stored locally in `assets/`
