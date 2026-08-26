@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The November 12 Hemp Deadline — What Public Law 119-37 Actually Says</title>
+<meta name="description" content="A plain-English breakdown of Section 781 of the 2026 Appropriations Act: the new total-THC definition, the 0.4mg per container cap, what stays legal, and what it means before November 12, 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+  body { background: var(--paper); color: var(--ink); font: 400 1.06rem/1.72 var(--serif); }
+
+  /* ---------- masthead ---------- */
+  .masthead { border-bottom: 1px solid var(--line); background: var(--white); }
+  .masthead__in { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1rem; }
+  .brand { font: 700 1.05rem/1 var(--sans); letter-spacing: -.02em; text-decoration: none; display: flex; align-items: center; gap: .55rem; }
+  .brand__dot { width: 9px; height: 9px; border-radius: 50%; background: var(--alert); }
+  .masthead__meta { font: 500 .78rem/1 var(--sans); color: var(--muted); }
+
+  /* ---------- hero ---------- */
+  .hero { position: relative; background: #0b1017; color: #fff; overflow: hidden; }
+  .hero__img { position: absolute; inset: 0; }
+  .hero__img img { width: 100%; height: 100%; object-fit: cover; opacity: .42; }
+  .hero::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(11,16,23,.55) 0%, rgba(11,16,23,.8) 55%, rgba(11,16,23,.97) 100%);
+  }
+  .hero__in { position: relative; z-index: 2; padding-block: clamp(3.5rem, 9vw, 6.5rem) clamp(2.5rem, 6vw, 4rem); }
+  .hero .eyebrow { color: #ff9d94; }
+  .hero h1 {
+    margin-top: 1.1rem;
+    font: 600 clamp(2.1rem, 5.6vw, 3.85rem)/1.1 var(--serif);
+    letter-spacing: -.025em; max-width: 20ch;
+  }
+  .hero__sub { margin-top: 1.35rem; max-width: 56ch; font: 400 clamp(1.06rem, 2vw, 1.24rem)/1.62 var(--serif); color: #c3ccd8; }
+  .hero__byline { margin-top: 1.8rem; font: 500 .82rem/1.6 var(--sans); color: #8fa0b3; }
+
+  .hero__cd { margin-top: 2.4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,.14); }
+  .hero__cd h2 { font: 600 .7rem/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: #ff9d94; text-align: center; margin-bottom: 1.1rem; }
+  .hero .cd__unit { min-width: 82px; }
+
+  /* ---------- article ---------- */
+  .article { padding-block: clamp(2.5rem, 6vw, 4rem) clamp(3rem, 8vw, 5rem); }
+  .article > * + * { margin-top: 1.5rem; }
+  .article h2 {
+    margin-top: 3.2rem; font: 600 clamp(1.5rem, 3.2vw, 1.95rem)/1.24 var(--serif);
+    letter-spacing: -.02em; scroll-margin-top: 2rem;
+  }
+  .article h3 { margin-top: 2.2rem; font: 600 1.16rem/1.35 var(--sans); letter-spacing: -.015em; }
+  .article p a { color: var(--alert-dk); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  .article ul, .article ol { padding-left: 1.35rem; }
+  .article li + li { margin-top: .6rem; }
+  .article strong { font-weight: 700; }
+
+  .dek { font: 400 1.16rem/1.68 var(--serif); color: var(--ink-2); }
+
+  /* ---------- TLDR ---------- */
+  .tldr {
+    padding: 1.6rem 1.75rem; border-radius: var(--r-md);
+    background: var(--white); border: 1px solid var(--line); box-shadow: var(--sh-1);
+    border-left: 4px solid var(--alert);
+  }
+  .tldr h2 { margin: 0 0 .9rem; font: 700 .72rem/1 var(--sans); letter-spacing: .15em; text-transform: uppercase; color: var(--alert); }
+  .tldr ul { margin: 0; padding-left: 1.15rem; font: 400 1rem/1.66 var(--sans); }
+  .tldr li + li { margin-top: .55rem; }
+
+  /* ---------- callout ---------- */
+  .callout {
+    padding: 1.5rem 1.7rem; border-radius: var(--r-md);
+    background: var(--alert-bg); border: 1px solid #f2d5d2;
+  }
+  .callout--green { background: var(--green-bg); border-color: #c9e2d5; }
+  .callout__h { font: 700 .72rem/1 var(--sans); letter-spacing: .13em; text-transform: uppercase; color: var(--alert); margin-bottom: .8rem; }
+  .callout--green .callout__h { color: var(--green); }
+  .callout p { font: 400 1rem/1.66 var(--sans); }
+  .callout p + p { margin-top: .8rem; }
+
+  /* ---------- math panel ---------- */
+  .math {
+    margin-block: 2rem; padding: 1.9rem; border-radius: var(--r-md);
+    background: var(--ink); color: #e7ecf2; box-shadow: var(--sh-2);
+  }
+  .math__h { font: 700 .7rem/1 var(--sans); letter-spacing: .15em; text-transform: uppercase; color: var(--gold-lt); }
+  .math__rows { margin-top: 1.4rem; display: grid; gap: .1rem; }
+  .math__row { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: .8rem 0; border-bottom: 1px solid rgba(255,255,255,.1); }
+  .math__row:last-child { border-bottom: 0; }
+  .math__lbl { font: 500 .95rem/1.4 var(--sans); color: #a9b6c6; }
+  .math__val { font: 700 1.02rem/1 var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .math__row--total { margin-top: .5rem; padding-top: 1.1rem; border-top: 2px solid rgba(255,255,255,.22); border-bottom: 0; }
+  .math__row--total .math__lbl { color: #fff; font-weight: 700; font-size: 1rem; }
+  .math__row--total .math__val { color: #ff8f85; font-size: 1.5rem; }
+  .math__note { margin-top: 1.2rem; font: 400 .84rem/1.6 var(--sans); color: #8b9aac; }
+
+  /* ---------- timeline ---------- */
+  .tl { margin-block: 2rem; position: relative; padding-left: 1.9rem; }
+  .tl::before { content: ""; position: absolute; left: 5px; top: .55rem; bottom: .55rem; width: 2px; background: var(--line); }
+  .tl__item { position: relative; padding-bottom: 1.7rem; }
+  .tl__item:last-child { padding-bottom: 0; }
+  .tl__item::before {
+    content: ""; position: absolute; left: -1.9rem; top: .42rem;
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--paper); border: 2.5px solid var(--muted);
+  }
+  .tl__item--done::before { background: var(--muted); }
+  .tl__item--now::before { background: var(--alert); border-color: var(--alert); box-shadow: 0 0 0 4px rgba(179,38,30,.16); }
+  .tl__item--future::before { border-style: dashed; }
+  .tl__d { font: 700 .74rem/1 var(--sans); letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+  .tl__item--now .tl__d { color: var(--alert); }
+  .tl__t { margin-top: .45rem; font: 600 1.04rem/1.4 var(--sans); }
+  .tl__b { margin-top: .35rem; font: 400 .95rem/1.62 var(--sans); color: var(--ink-2); }
+
+  /* ---------- comparison table ---------- */
+  .cmp { margin-block: 2rem; background: var(--white); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; box-shadow: var(--sh-1); }
+  .cmp table.data { min-width: 560px; }
+  .cmp table.data th, .cmp table.data td { padding: 1rem 1.15rem; }
+  .cmp .yes { color: var(--green); font-weight: 700; }
+  .cmp .no  { color: var(--alert); font-weight: 700; }
+
+  /* ---------- sources ---------- */
+  .sources { margin-top: 3.2rem; padding: 1.6rem 1.75rem; border-radius: var(--r-md); background: var(--paper-2); border: 1px solid var(--line); }
+  .sources h2 { margin: 0 0 1rem; font: 700 .72rem/1 var(--sans); letter-spacing: .15em; text-transform: uppercase; color: var(--muted); }
+  .sources ol { margin: 0; padding-left: 1.2rem; font: 400 .88rem/1.65 var(--sans); color: var(--ink-2); }
+  .sources li + li { margin-top: .65rem; }
+  .sources a { color: var(--alert-dk); word-break: break-word; }
+
+  /* ---------- CTA ---------- */
+  .cta { margin-top: 3.2rem; padding: 2.2rem; border-radius: var(--r-lg); background: var(--ink); color: #fff; text-align: center; box-shadow: var(--sh-2); }
+  .cta h2 { margin: 0; font: 600 clamp(1.45rem, 3.2vw, 1.9rem)/1.24 var(--serif); letter-spacing: -.02em; }
+  .cta p { margin-top: .9rem; font: 400 1rem/1.62 var(--sans); color: #b4c0ce; max-width: 46ch; margin-inline: auto; }
+  .cta .btn { margin-top: 1.6rem; }
+  .cta__fine { margin-top: 1.1rem; font: 400 .78rem/1.55 var(--sans); color: #7d8c9d; }
+
+  /* ---------- footer ---------- */
+  .foot { margin-top: 4rem; border-top: 1px solid var(--line); background: var(--white); padding-block: 2.4rem 3rem; }
+  .foot__grid { display: grid; gap: 1.4rem; }
+  .foot p { font: 400 .8rem/1.65 var(--sans); color: var(--muted); }
+  .foot a { color: var(--ink-2); }
+
+  @media (min-width: 720px) {
+    .hero .cd__unit { min-width: 104px; }
+    .hero .cd__n { font-size: 2.25rem; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="wrap masthead__in">
+    <a class="brand" href="index.html"><span class="brand__dot"></span>The Hemp Deadline Brief</a>
+    <span class="masthead__meta">Updated <time datetime="2026-08-26">August 26, 2026</time></span>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero__img"><img src="assets/capitol.jpg" alt="The United States Capitol at dusk beneath heavy storm clouds." width="2752" height="1536" fetchpriority="high"></div>
+  <div class="col hero__in">
+    <p class="eyebrow">Regulatory Analysis &middot; Federal Hemp Policy</p>
+    <h1>In <span data-days-left>78</span> days, most hemp THC products become federally unlawful.</h1>
+    <p class="hero__sub">Not a rumour, not a proposal. It is signed law &mdash; Public Law 119-37, Section 781 &mdash; and it takes effect on November&nbsp;12,&nbsp;2026. Here is exactly what it changes, in plain English.</p>
+    <p class="hero__byline">Editorial &amp; commentary &middot; Approx. 7 minute read &middot; Sources linked throughout</p>
+
+    <div class="hero__cd">
+      <h2>Time remaining until the federal standard changes</h2>
+      <div class="cd" data-countdown role="timer">
+        <div class="cd__unit"><div class="cd__n" data-cd="days">&mdash;</div><div class="cd__l">Days</div></div>
+        <div class="cd__unit"><div class="cd__n" data-cd="hours">&mdash;</div><div class="cd__l">Hours</div></div>
+        <div class="cd__unit"><div class="cd__n" data-cd="minutes">&mdash;</div><div class="cd__l">Minutes</div></div>
+        <div class="cd__unit"><div class="cd__n" data-cd="seconds">&mdash;</div><div class="cd__l">Seconds</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main id="main" class="col article">
+
+  <p class="disclosure"><strong>Disclosure:</strong> This page is published by a retailer that sells hemp-derived products, including products affected by the law described below. We have a direct commercial interest in this topic. This is commentary and general information &mdash; <strong>not legal advice</strong>. Consult a licensed attorney about your own situation.</p>
+
+  <div class="tldr">
+    <h2>The short version</h2>
+    <ul>
+      <li>The federal definition of hemp changes from <strong>delta-9 THC only</strong> to <strong>total THC</strong> &mdash; which folds in THCA, delta-8, and delta-10.</li>
+      <li>Finished consumer products get a hard cap of <strong>0.4 milligrams of total THC per container</strong>.</li>
+      <li>A typical 5mg &times; 20-count sleep gummy contains <strong>100mg per container</strong> &mdash; roughly <strong>250&times;</strong> the new limit.</li>
+      <li>The U.S. Hemp Roundtable estimates this makes <strong>about 95%</strong> of existing hemp cannabinoid products federally unlawful.</li>
+      <li>Effective date is <strong>November 12, 2026</strong>. A delay to December 11 passed the Senate on August 8 but <strong>has not been enacted</strong>.</li>
+      <li><strong>CBD, CBN, and melatonin are not banned.</strong> Only the THC content is capped.</li>
+    </ul>
+  </div>
+
+  <p class="dek">For eight years, the hemp industry operated inside a definition written in the 2018 Farm Bill: hemp was cannabis containing no more than 0.3% <em>delta-9</em> THC by dry weight. That single word &mdash; <em>delta-9</em> &mdash; is what made the modern hemp cannabinoid market possible. It is also the word Congress just removed.</p>
+
+  <h2 id="what-changed">What actually changed</h2>
+
+  <p>On November 12, 2025, the President signed the Continuing Appropriations Act into law as <strong>Public Law 119-37</strong>. Inside it, at Section 781, was a rewrite of the federal hemp definition that the hemp industry had been fighting off since 2024.</p>
+
+  <p>The change is small on paper and enormous in practice:</p>
+
+  <div class="cmp tbl-scroll">
+    <table class="data">
+      <thead>
+        <tr><th>&nbsp;</th><th>2018 Farm Bill (current)</th><th>P.L. 119-37 &sect;781 (from Nov 12)</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Measured compound</strong></td>
+          <td>Delta-9 THC only</td>
+          <td><strong>Total THC</strong> &mdash; including THCA, delta-8, delta-10</td>
+        </tr>
+        <tr>
+          <td><strong>Crop threshold</strong></td>
+          <td>0.3% by dry weight</td>
+          <td>0.3% by dry weight <em>(same number, far broader measure)</em></td>
+        </tr>
+        <tr>
+          <td><strong>Finished-product cap</strong></td>
+          <td class="yes">None</td>
+          <td class="no">0.4mg total THC per container</td>
+        </tr>
+        <tr>
+          <td><strong>Synthetic cannabinoids</strong></td>
+          <td>Grey area, widely sold</td>
+          <td class="no">Excluded from the definition</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Switching from delta-9 to <em>total</em> THC closes what the industry called the THCA loophole. THCA is the non-intoxicating acid form of THC that converts to delta-9 when heated &mdash; so a flower product could test under 0.3% delta-9 while being, functionally, high-THC cannabis. Under a total-THC standard, that arithmetic no longer works.</p>
+
+  <p>But the provision that reaches furthest into the consumer market is the second one: the per-container cap.</p>
+
+  <h2 id="the-math">The math that decides everything</h2>
+
+  <p>0.4 milligrams is a very small number. It is small enough that it is worth walking through what it means for an ordinary product on an ordinary shelf. Take a standard hemp-derived sleep gummy &mdash; 5mg of THC per piece, twenty pieces in the bottle:</p>
+
+  <div class="math">
+    <p class="math__h">Worked example &middot; standard 5mg sleep gummy</p>
+    <div class="math__rows">
+      <div class="math__row"><span class="math__lbl">THC per gummy</span><span class="math__val">5 mg</span></div>
+      <div class="math__row"><span class="math__lbl">Gummies per container</span><span class="math__val">&times; 20</span></div>
+      <div class="math__row"><span class="math__lbl">Total THC per container</span><span class="math__val">100 mg</span></div>
+      <div class="math__row"><span class="math__lbl">New federal cap per container</span><span class="math__val">0.4 mg</span></div>
+      <div class="math__row math__row--total"><span class="math__lbl">Over the limit by</span><span class="math__val">250&times;</span></div>
+    </div>
+    <p class="math__note">A 10mg version of the same product lands at 200mg per container &mdash; 500&times; the cap. The gap is not a formulation problem that can be reformulated around. At 0.4mg per <em>container</em>, a compliant product cannot contain a meaningful dose of THC at all.</p>
+  </div>
+
+  <p>This is the detail that gets lost in most coverage. The cap is written per <strong>container</strong>, not per serving. A brand cannot comply by shrinking the dose per gummy and keeping the count &mdash; twenty gummies sharing 0.4mg works out to 0.02mg each. There is no version of an intoxicating hemp product that survives this threshold.</p>
+
+  <h2 id="timeline">How it got here, and what could still change</h2>
+
+  <div class="tl">
+    <div class="tl__item tl__item--done">
+      <p class="tl__d">December 2018</p>
+      <p class="tl__t">The 2018 Farm Bill legalises hemp</p>
+      <p class="tl__b">Defines hemp by delta-9 THC content at 0.3% dry weight. The modern hemp cannabinoid market is built on this definition.</p>
+    </div>
+    <div class="tl__item tl__item--done">
+      <p class="tl__d">November 12, 2025</p>
+      <p class="tl__t">P.L. 119-37 is signed</p>
+      <p class="tl__b">Section 781 of the Continuing Appropriations Act (H.R. 5371) rewrites the definition and adds the 0.4mg per-container cap &mdash; with a one-year runway before it bites.</p>
+    </div>
+    <div class="tl__item tl__item--done">
+      <p class="tl__d">August 8, 2026</p>
+      <p class="tl__t">Senate passes a delay to December 11</p>
+      <p class="tl__b">A stopgap funding bill would push the effective date back by roughly a month. It still requires House passage and a signature. <strong>It is not law.</strong></p>
+    </div>
+    <div class="tl__item tl__item--now">
+      <p class="tl__d">Today &middot; August 26, 2026</p>
+      <p class="tl__t"><span data-days-left>78</span> days remain</p>
+      <p class="tl__b">November 12 remains the operative date. Retailers and manufacturers are working to the enacted deadline, not the proposed one.</p>
+    </div>
+    <div class="tl__item tl__item--future">
+      <p class="tl__d">November 12, 2026</p>
+      <p class="tl__t">The new standard takes effect</p>
+      <p class="tl__b">Absent intervening legislation, products above the cap fall outside the federal hemp definition.</p>
+    </div>
+  </div>
+
+  <div class="callout">
+    <p class="callout__h">A word about the December 11 date</p>
+    <p>You will see both November 12 and December 11 cited. Only one of them is law. The December date comes from a Senate-passed stopgap that has not cleared the House or been signed. Treating it as settled is a bet on a bill that has not passed &mdash; and if it fails, the extra month simply does not exist.</p>
+  </div>
+
+  <h2 id="whats-legal">What is <em>not</em> going away</h2>
+
+  <p>The coverage of this law has been sloppy, and a lot of people have come away believing hemp is being banned outright. It is not. The statute caps THC. It does not touch the other cannabinoids, and it does not touch conventional sleep ingredients.</p>
+
+  <div class="callout callout--green">
+    <p class="callout__h">Still federally lawful after November 12</p>
+    <p><strong>CBD</strong> &mdash; unaffected, provided the finished product stays under 0.4mg total THC per container. <strong>CBN</strong> (cannabinol) &mdash; the cannabinoid most associated with sedation in sleep formulas &mdash; is not a THC isomer and is not capped. <strong>Melatonin</strong> &mdash; a dietary supplement, entirely outside the scope of this law.</p>
+    <p>In practice this means a CBD + CBN + melatonin sleep formula can continue to be sold. What disappears is the THC component.</p>
+  </div>
+
+  <h3>What it means if you currently use a THC sleep product</h3>
+
+  <ul>
+    <li><strong>Product you already own remains yours.</strong> The law governs what may be produced and sold, not what is sitting in your cupboard.</li>
+    <li><strong>Supply gets tight before the date, not on it.</strong> Manufacturers stop production runs well ahead of a deadline they cannot sell into. Expect thinning inventory through October rather than a clean cutoff.</li>
+    <li><strong>State law is a separate question.</strong> Several states already restrict these products independently. Federal legality is a floor, not a guarantee.</li>
+    <li><strong>THC-free formulations are the continuity path.</strong> If the CBN and melatonin are doing meaningful work in your routine, a THC-free version of the same formula is not affected by any of this.</li>
+  </ul>
+
+  <h2 id="what-to-do">The practical read</h2>
+
+  <p>If you use these products and they work for you, there are really only two decisions in front of you between now and November. The first is whether to buy what you want at current prices while the current formulations are still being made. The second is whether to trial a THC-free formulation now, while you can still compare the two directly, rather than after one of them is gone.</p>
+
+  <p>Both are reasonable. Neither requires panic. What is not reasonable is assuming the date will move &mdash; the delay is a proposal, and proposals fail.</p>
+
+  <div class="cta">
+    <h2>The formulations affected by the cap are still available today</h2>
+    <p>PureKana's THC Sleep Gummies pair 5mg CBN and 3mg melatonin with either 5mg or 10mg THC &mdash; and a THC-free version that is unaffected by the November cap.</p>
+    <a class="btn btn--alert btn--lg" data-link="BUY" href="https://purekana.com/products/thc-sleep-gummies?variant=48855575068912" rel="sponsored noopener" target="_blank">See current availability &amp; pricing</a>
+    <p class="cta__fine">We earn a commission on purchases made through this link. For adults 21+. Not evaluated by the FDA.</p>
+  </div>
+
+  <div class="sources">
+    <h2>Sources &amp; further reading</h2>
+    <ol>
+      <li>Public Law 119-37, Continuing Appropriations Act, 2026 (H.R. 5371), &sect;781 &mdash; signed November 12, 2025.</li>
+      <li>Agricultural Improvement Act of 2018 (Farm Bill), &sect;10113 &mdash; the original hemp definition.</li>
+      <li>Hemp Law Group, <a href="https://www.hemplawgroup.com/news/federal-hemp-ban-2026-where-things-stand" rel="noopener" target="_blank">"Federal Hemp Ban 2026: Where Things Stand"</a> &mdash; status of the effective date and the proposed delay.</li>
+      <li>Vicente LLP, <a href="https://vicentellp.com/insights/2026-federal-hemp-ban-what-it-means-for-the-future-of-consumable-hemp-products/" rel="noopener" target="_blank">"2026 Federal Hemp Ban: What It Means for the Future of Consumable Hemp Products."</a></li>
+      <li>U.S. Hemp Roundtable &mdash; estimate that approximately 95% of hemp-derived cannabinoid products fall outside the revised definition.</li>
+    </ol>
+  </div>
+
+</main>
+
+<footer class="foot">
+  <div class="col foot__grid">
+    <p><strong>About this page.</strong> Published by a retailer of hemp-derived products. We receive compensation when readers purchase through links on this page. That commercial relationship does not change the statutory citations above, which you can and should verify independently.</p>
+    <p>Nothing here is legal advice, medical advice, or a substitute for either. Hemp-derived THC products are for adults 21 and over. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+    <p><a href="index.html">&larr; All three pages</a></p>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

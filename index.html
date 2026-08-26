@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hemp Deadline Campaign — Three Landing Pages</title>
+<meta name="description" content="Three landing page approaches to the November 12, 2026 federal hemp THC cap: a regulatory explainer, a direct-response sales page, and a labeled advertorial.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+  body { background: var(--night); color: #fff; font: 400 1rem/1.68 var(--sans); min-height: 100vh; }
+
+  .top { padding-block: clamp(3rem, 8vw, 5.5rem) clamp(2rem, 5vw, 3rem); }
+  .top .eyebrow { color: var(--gold-lt); }
+  .top h1 {
+    margin-top: 1rem; max-width: 22ch;
+    font: 600 clamp(2.1rem, 5.5vw, 3.4rem)/1.1 var(--serif); letter-spacing: -.028em;
+  }
+  .top p { margin-top: 1.3rem; max-width: 60ch; font: 400 1.1rem/1.65 var(--sans); color: #aeb8d0; }
+
+  .deadline {
+    margin-top: 2.4rem; padding: 1.5rem 1.7rem; border-radius: var(--r-md);
+    background: rgba(255,255,255,.055); border: 1px solid rgba(255,255,255,.12);
+    display: flex; flex-wrap: wrap; align-items: center; gap: 1.4rem; justify-content: space-between;
+  }
+  .deadline__l { font: 600 .72rem/1.5 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--gold-lt); }
+  .deadline__s { margin-top: .4rem; font: 400 .92rem/1.5 var(--sans); color: #9aa4bf; }
+  .deadline .cd__unit { min-width: 68px; }
+
+  .cards { padding-bottom: clamp(3rem, 7vw, 5rem); display: grid; gap: 1.2rem; }
+  @media (min-width: 900px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+
+  .card {
+    display: flex; flex-direction: column;
+    background: rgba(255,255,255,.045); border: 1px solid rgba(255,255,255,.11);
+    border-radius: var(--r-lg); overflow: hidden; text-decoration: none; color: inherit;
+    transition: transform .2s cubic-bezier(.2,.8,.3,1), border-color .2s, background-color .2s;
+  }
+  .card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,.24); background: rgba(255,255,255,.075); }
+  .card__img { aspect-ratio: 16/9; overflow: hidden; background: #0c111f; }
+  .card__img img { width: 100%; height: 100%; object-fit: cover; opacity: .78; }
+  .card__body { padding: 1.5rem 1.5rem 1.7rem; display: flex; flex-direction: column; flex: 1; }
+  .card__n { font: 800 .66rem/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--gold-lt); }
+  .card__h { margin-top: .8rem; font: 600 1.32rem/1.28 var(--serif); letter-spacing: -.02em; }
+  .card__b { margin-top: .7rem; font: 400 .93rem/1.62 var(--sans); color: #a4aec7; flex: 1; }
+  .card__use { margin-top: 1.1rem; padding-top: 1.1rem; border-top: 1px solid rgba(255,255,255,.1); font: 500 .82rem/1.5 var(--sans); color: #8b95b2; }
+  .card__use b { color: #c3cbe0; font-weight: 600; }
+  .card__go { margin-top: 1.2rem; font: 600 .9rem/1 var(--sans); color: var(--gold-lt); }
+
+  .notes { padding-bottom: clamp(3rem, 7vw, 5rem); }
+  .notes__box {
+    padding: 1.8rem; border-radius: var(--r-md);
+    background: rgba(255,255,255,.045); border: 1px solid rgba(255,255,255,.11);
+  }
+  .notes h2 { font: 600 1.2rem/1.3 var(--sans); letter-spacing: -.015em; }
+  .notes ul { margin-top: 1rem; padding-left: 1.2rem; font: 400 .93rem/1.68 var(--sans); color: #a4aec7; }
+  .notes li + li { margin-top: .6rem; }
+  .notes code {
+    font: 500 .86em var(--mono); padding: .12em .42em; border-radius: 4px;
+    background: rgba(255,255,255,.09); color: #dbe2f2;
+  }
+  .notes strong { color: #dbe2f2; font-weight: 600; }
+
+  .pagefoot { border-top: 1px solid rgba(255,255,255,.1); padding-block: 2rem 3rem; }
+  .pagefoot p { font: 400 .8rem/1.65 var(--sans); color: #6f7996; max-width: 60ch; }
+</style>
+</head>
+<body>
+
+<div class="wrap top">
+  <p class="eyebrow">Campaign build &middot; PureKana THC Sleep Gummies</p>
+  <h1>Three routes at the November 12 hemp deadline</h1>
+  <p>Same underlying fact, same product, three different angles of attack. Built to be A/B tested against each other rather than shipped as one page &mdash; each has a different traffic source it suits best.</p>
+
+  <div class="deadline">
+    <div>
+      <p class="deadline__l">Federal THC cap takes effect</p>
+      <p class="deadline__s">P.L. 119-37 &sect;781 &middot; November 12, 2026</p>
+    </div>
+    <div class="cd" data-countdown role="timer">
+      <div class="cd__unit"><div class="cd__n" data-cd="days">&mdash;</div><div class="cd__l">Days</div></div>
+      <div class="cd__unit"><div class="cd__n" data-cd="hours">&mdash;</div><div class="cd__l">Hrs</div></div>
+      <div class="cd__unit"><div class="cd__n" data-cd="minutes">&mdash;</div><div class="cd__l">Min</div></div>
+      <div class="cd__unit"><div class="cd__n" data-cd="seconds">&mdash;</div><div class="cd__l">Sec</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap cards">
+  <a class="card" href="explainer.html">
+    <div class="card__img"><img src="assets/capitol.jpg" alt="" width="2752" height="1536" loading="lazy"></div>
+    <div class="card__body">
+      <p class="card__n">Page 01</p>
+      <p class="card__h">The regulatory explainer</p>
+      <p class="card__b">A sober, cited breakdown of what P.L. 119-37 §781 actually changes &mdash; the total-THC redefinition, the 0.4mg per-container cap, the worked arithmetic, and what stays legal. Retailer disclosure up top.</p>
+      <p class="card__use"><b>Best for:</b> organic search, Reddit, email to an existing list, anywhere a hard sell gets rejected.</p>
+      <p class="card__go">Open page &rarr;</p>
+    </div>
+  </a>
+
+  <a class="card" href="sale.html">
+    <div class="card__img"><img src="assets/sleep-calm.jpg" alt="" width="2752" height="1536" loading="lazy"></div>
+    <div class="card__body">
+      <p class="card__n">Page 02</p>
+      <p class="card__h">The direct-response sales page</p>
+      <p class="card__b">Full conversion build: hero offer, ingredient breakdown, night timeline, honest comparison table, three-tier pricing, guarantee, FAQ, sticky CTA bar and countdown throughout.</p>
+      <p class="card__use"><b>Best for:</b> paid social and search traffic that already knows it wants a sleep product.</p>
+      <p class="card__go">Open page &rarr;</p>
+    </div>
+  </a>
+
+  <a class="card" href="advertorial.html">
+    <div class="card__img"><img src="assets/insomnia.jpg" alt="" width="2752" height="1536" loading="lazy"></div>
+    <div class="card__body">
+      <p class="card__n">Page 03</p>
+      <p class="card__h">The labeled advertorial</p>
+      <p class="card__b">The native-ad format &mdash; story-led, magazine typography, drop cap, pull quote, inline product card &mdash; carrying a persistent sticky "Sponsored Content" label as FTC guidance requires.</p>
+      <p class="card__use"><b>Best for:</b> Taboola, Outbrain, and native discovery placements.</p>
+      <p class="card__go">Open page &rarr;</p>
+    </div>
+  </a>
+</div>
+
+<div class="wrap notes">
+  <div class="notes__box">
+    <h2>Before you run traffic</h2>
+    <ul>
+      <li><strong>All three share one config.</strong> Deadline date and every product link live in the <code>window.SITE</code> block at the top of <code>assets/site.js</code>. Change them once, all pages update.</li>
+      <li><strong>Swap in your tracked affiliate URLs.</strong> Every CTA reads its href from <code>data-link="BUY"</code>, so replacing <code>SITE.BUY</code> updates all of them.</li>
+      <li><strong>The testimonials on page 02 are empty slots on purpose.</strong> They are marked with dashed borders. Paste real, verbatim reviews from your own verified platform &mdash; fabricated testimonials are the single fastest way to draw an FTC action.</li>
+      <li><strong>Verify pricing before launch.</strong> Prices were taken from the product page at build time and change often.</li>
+      <li><strong>If the December 11 delay is ever enacted</strong>, set <code>DEADLINE</code> to <code>'2026-12-11T00:00:00-05:00'</code> and flip <code>DELAY_ENACTED</code> to true.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="wrap pagefoot">
+  <p>Affiliate disclosure appears on all three pages. Statutory descriptions are general information and not legal advice. Products referenced are for adults 21+ and these statements have not been evaluated by the FDA.</p>
+</div>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

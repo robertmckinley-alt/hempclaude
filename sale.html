@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THC Sleep Gummies — CBN + Melatonin | Available Until November 12</title>
+<meta name="description" content="5mg CBN, 3mg melatonin and 5 or 10mg THC. Fall asleep faster, stay asleep longer. Available at current pricing until the federal THC cap takes effect November 12, 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+  body { background: var(--paper); color: var(--ink); font: 400 1rem/1.68 var(--sans); }
+
+  /* ---------- alert bar ---------- */
+  .alertbar {
+    background: var(--alert); color: #fff; text-align: center;
+    padding: .7rem 1rem; font: 600 .84rem/1.45 var(--sans);
+  }
+  .alertbar strong { font-weight: 800; }
+  .alertbar a { color: #fff; text-underline-offset: 3px; }
+
+  /* ---------- hero ---------- */
+  .hero { position: relative; background: var(--night); color: #fff; overflow: hidden; }
+  .hero__img { position: absolute; inset: 0; }
+  .hero__img img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%; opacity: .55; }
+  .hero::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(100deg, rgba(20,26,46,.96) 0%, rgba(20,26,46,.86) 42%, rgba(20,26,46,.4) 78%, rgba(20,26,46,.55) 100%);
+  }
+  .hero__in { position: relative; z-index: 2; padding-block: clamp(3rem, 8vw, 5.5rem); }
+  .hero__copy { max-width: 34rem; }
+  .hero .eyebrow { color: var(--gold-lt); }
+  .hero h1 {
+    margin-top: 1rem;
+    font: 600 clamp(2.2rem, 6vw, 3.7rem)/1.08 var(--serif);
+    letter-spacing: -.028em;
+  }
+  .hero h1 em { font-style: normal; color: var(--gold-lt); }
+  .hero__sub { margin-top: 1.3rem; font: 400 clamp(1.04rem, 2vw, 1.18rem)/1.62 var(--sans); color: #c6cde0; }
+
+  .hero__facts { margin-top: 1.9rem; display: flex; flex-wrap: wrap; gap: .5rem; }
+  .chip {
+    padding: .5rem .95rem; border-radius: 999px;
+    font: 600 .8rem/1 var(--sans);
+    background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18);
+  }
+
+  .hero__cta { margin-top: 2.1rem; display: flex; flex-wrap: wrap; gap: .8rem; align-items: center; }
+  .hero__price { margin-top: 1.4rem; font: 500 .92rem/1.6 var(--sans); color: #a9b3cc; }
+  .hero__price s { opacity: .6; }
+  .hero__price b { color: #fff; font-weight: 700; font-size: 1.1rem; }
+
+  /* ---------- countdown strip ---------- */
+  .cdstrip { background: var(--night-2); color: #fff; border-top: 1px solid rgba(255,255,255,.09); padding-block: 1.5rem; }
+  .cdstrip__h { text-align: center; font: 600 .7rem/1.5 var(--sans); letter-spacing: .15em; text-transform: uppercase; color: var(--gold-lt); margin-bottom: .95rem; }
+  .cdstrip__note { margin-top: .95rem; text-align: center; font: 400 .8rem/1.55 var(--sans); color: #8d97b3; }
+  .cdstrip__note a { color: var(--gold-lt); }
+
+  /* ---------- sections ---------- */
+  .sec { padding-block: clamp(3rem, 7vw, 5rem); }
+  .sec--tint { background: var(--paper-2); }
+  .sec--dark { background: var(--night); color: #fff; }
+  .sec__head { max-width: 46rem; margin-inline: auto; text-align: center; margin-bottom: clamp(2rem, 4vw, 3rem); }
+  .sec__head .eyebrow { color: var(--amber); }
+  .sec--dark .sec__head .eyebrow { color: var(--gold-lt); }
+  .sec__head h2 {
+    margin-top: .8rem;
+    font: 600 clamp(1.7rem, 4vw, 2.5rem)/1.16 var(--serif); letter-spacing: -.025em;
+  }
+  .sec__head p { margin-top: 1rem; font: 400 1.06rem/1.65 var(--sans); color: var(--muted); }
+  .sec--dark .sec__head p { color: #a9b3cc; }
+
+  /* ---------- formula ---------- */
+  .formula { display: grid; gap: 1rem; }
+  @media (min-width: 760px) { .formula { grid-template-columns: repeat(3, 1fr); } }
+  .ing {
+    padding: 1.6rem; border-radius: var(--r-md);
+    background: var(--white); border: 1px solid var(--line); box-shadow: var(--sh-1);
+  }
+  .ing__dose { font: 800 2.1rem/1 var(--sans); letter-spacing: -.04em; color: var(--amber); }
+  .ing__name { margin-top: .55rem; font: 700 1.05rem/1.3 var(--sans); }
+  .ing__role { margin-top: .2rem; font: 500 .76rem/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .ing__body { margin-top: .85rem; font: 400 .93rem/1.62 var(--sans); color: var(--ink-2); }
+
+  /* ---------- night timeline ---------- */
+  .night { display: grid; gap: 1rem; counter-reset: step; }
+  @media (min-width: 860px) { .night { grid-template-columns: repeat(4, 1fr); } }
+  .night__step {
+    position: relative; padding: 1.5rem 1.4rem;
+    border-radius: var(--r-md);
+    background: rgba(255,255,255,.055); border: 1px solid rgba(255,255,255,.11);
+  }
+  .night__t { font: 700 .74rem/1 var(--mono); letter-spacing: .08em; color: var(--gold-lt); }
+  .night__h { margin-top: .7rem; font: 600 1.02rem/1.35 var(--sans); }
+  .night__b { margin-top: .5rem; font: 400 .9rem/1.6 var(--sans); color: #a9b3cc; }
+
+  /* ---------- comparison ---------- */
+  .cmp { background: var(--white); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; box-shadow: var(--sh-1); max-width: 52rem; margin-inline: auto; }
+  .cmp table.data { min-width: 580px; }
+  .cmp table.data th, .cmp table.data td { padding: 1rem 1.1rem; }
+  .cmp table.data thead th:nth-child(2) { color: var(--amber); }
+  .cmp .mark-y { color: var(--green); font-weight: 700; }
+  .cmp .mark-n { color: #b9c0c8; font-weight: 700; }
+
+  /* ---------- pricing ---------- */
+  .tiers { display: grid; gap: 1.1rem; align-items: start; }
+  @media (min-width: 880px) { .tiers { grid-template-columns: repeat(3, 1fr); } }
+  .tier {
+    position: relative; padding: 1.9rem 1.6rem;
+    background: var(--white); border: 1.5px solid var(--line); border-radius: var(--r-md);
+    box-shadow: var(--sh-1); transition: transform .18s, box-shadow .18s, border-color .18s;
+  }
+  .tier:hover { transform: translateY(-3px); box-shadow: var(--sh-2); }
+  .tier--best { border-color: var(--amber); box-shadow: var(--sh-2); }
+  @media (min-width: 880px) { .tier--best { transform: scale(1.035); } .tier--best:hover { transform: scale(1.035) translateY(-3px); } }
+  .tier__flag {
+    position: absolute; top: -.72rem; left: 50%; transform: translateX(-50%);
+    padding: .32rem .85rem; border-radius: 999px; white-space: nowrap;
+    background: var(--amber); color: #fff;
+    font: 700 .66rem/1 var(--sans); letter-spacing: .11em; text-transform: uppercase;
+  }
+  .tier__name { font: 700 1.05rem/1.3 var(--sans); }
+  .tier__sub { margin-top: .25rem; font: 500 .82rem/1.4 var(--sans); color: var(--muted); }
+  .tier__price { margin-top: 1.1rem; display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap; }
+  .tier__now { font: 800 2.3rem/1 var(--sans); letter-spacing: -.04em; }
+  .tier__was { font: 500 1rem/1 var(--sans); color: var(--muted); text-decoration: line-through; }
+  .tier__unit { margin-top: .4rem; font: 500 .82rem/1.4 var(--sans); color: var(--muted); }
+  .tier__list { margin-top: 1.2rem; padding: 0; list-style: none; font: 400 .9rem/1.55 var(--sans); }
+  .tier__list li { position: relative; padding-left: 1.5rem; }
+  .tier__list li + li { margin-top: .55rem; }
+  .tier__list li::before {
+    content: ""; position: absolute; left: 0; top: .42rem;
+    width: 8px; height: 8px; border-radius: 50%; background: var(--green);
+  }
+  .tier .btn { margin-top: 1.5rem; }
+
+  .pricing__note { margin-top: 1.6rem; text-align: center; }
+
+  /* ---------- guarantee ---------- */
+  .guar {
+    max-width: 44rem; margin-inline: auto; text-align: center;
+    padding: 2.2rem 1.9rem; border-radius: var(--r-lg);
+    background: var(--green-bg); border: 1px solid #c9e2d5;
+  }
+  .guar__h { font: 600 clamp(1.35rem, 3vw, 1.7rem)/1.25 var(--serif); letter-spacing: -.02em; color: #124a33; }
+  .guar p { margin-top: .9rem; font: 400 1rem/1.65 var(--sans); color: #2c5a45; }
+
+  /* ---------- testimonials ---------- */
+  .quotes { display: grid; gap: 1.1rem; }
+  @media (min-width: 820px) { .quotes { grid-template-columns: repeat(3, 1fr); } }
+  .quote {
+    padding: 1.6rem; border-radius: var(--r-md);
+    background: var(--white); border: 1px solid var(--line); box-shadow: var(--sh-1);
+  }
+  .quote__stars { color: var(--gold); font-size: 1rem; letter-spacing: .12em; }
+  .quote__text { margin-top: .9rem; font: 400 1rem/1.65 var(--serif); color: var(--ink-2); }
+  .quote__by { margin-top: 1rem; font: 600 .85rem/1.4 var(--sans); }
+  .quote__by span { display: block; font-weight: 500; color: var(--muted); font-size: .78rem; margin-top: .15rem; }
+  .quote--slot { background: repeating-linear-gradient(45deg, #fff, #fff 12px, #fbfaf6 12px, #fbfaf6 24px); border-style: dashed; border-color: #d8cfae; }
+  .quote--slot .quote__text { color: #8a7c52; font-style: italic; }
+
+  /* ---------- FAQ ---------- */
+  .faq { max-width: 44rem; margin-inline: auto; }
+  .faq__item { border-bottom: 1px solid var(--line); }
+  .faq__item > button {
+    width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    padding: 1.25rem 0; background: none; border: 0; cursor: pointer; text-align: left;
+    font: 600 1.04rem/1.45 var(--sans); letter-spacing: -.01em;
+  }
+  .faq__item > button::after {
+    content: "+"; flex: 0 0 auto; font: 400 1.5rem/1 var(--sans); color: var(--amber); transition: transform .2s;
+  }
+  .faq__item.is-open > button::after { transform: rotate(45deg); }
+  .faq__a { display: none; padding-bottom: 1.3rem; font: 400 .98rem/1.68 var(--sans); color: var(--ink-2); }
+  .faq__item.is-open .faq__a { display: block; }
+  .faq__a p + p { margin-top: .8rem; }
+
+  /* ---------- final CTA ---------- */
+  .final { text-align: center; }
+  .final h2 { font: 600 clamp(1.9rem, 4.5vw, 2.9rem)/1.14 var(--serif); letter-spacing: -.028em; max-width: 20ch; margin-inline: auto; }
+  .final p { margin-top: 1.1rem; font: 400 1.06rem/1.65 var(--sans); color: #a9b3cc; max-width: 46ch; margin-inline: auto; }
+  .final .cd { margin-top: 2rem; }
+  .final .btn { margin-top: 2rem; }
+
+  /* ---------- sticky bar ---------- */
+  .sticky {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+    background: rgba(20,26,46,.97); backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,.14);
+    padding: .75rem 0; color: #fff;
+    transform: translateY(110%); transition: transform .28s cubic-bezier(.2,.8,.3,1);
+  }
+  .sticky.is-visible { transform: translateY(0); }
+  .sticky__in { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+  .sticky__txt { font: 600 .88rem/1.35 var(--sans); }
+  .sticky__txt span { display: block; font-weight: 500; font-size: .76rem; color: #a9b3cc; margin-top: .12rem; }
+  .sticky .btn { padding: .8rem 1.5rem; font-size: .92rem; white-space: nowrap; }
+  @media (max-width: 560px) { .sticky__txt span { display: none; } }
+
+  /* ---------- footer ---------- */
+  .foot { background: #0d1120; color: #7a85a3; padding-block: 2.6rem 6rem; }
+  .foot__grid { display: grid; gap: 1.2rem; max-width: 52rem; }
+  .foot p { font: 400 .8rem/1.65 var(--sans); }
+  .foot a { color: #9aa5c2; }
+  .foot strong { color: #b6c0da; font-weight: 600; }
+
+  @media (min-width: 720px) { .cdstrip .cd__unit { min-width: 96px; } }
+</style>
+</head>
+<body>
+
+<div class="alertbar">
+  Federal THC cap takes effect <strong>November&nbsp;12,&nbsp;2026</strong> &mdash; <span data-days-left>78</span> days.
+  <a href="explainer.html">Read what the law actually says &rarr;</a>
+</div>
+
+<header class="hero" data-sticky-after>
+  <div class="hero__img"><img src="assets/sleep-calm.jpg" alt="A woman sleeping peacefully in a softly lit bedroom at night." width="2752" height="1536" fetchpriority="high"></div>
+  <div class="wrap hero__in">
+    <div class="hero__copy">
+      <p class="eyebrow">CBN &middot; Melatonin &middot; THC Sleep Formula</p>
+      <h1>Asleep in 30 minutes. <em>Still asleep at 4am.</em></h1>
+      <p class="hero__sub">Most sleep aids get you down but not through the night. This one stacks 5mg CBN and 3mg melatonin with a low, deliberate dose of THC &mdash; built for staying asleep, not just falling asleep.</p>
+
+      <div class="hero__facts">
+        <span class="chip">5mg CBN</span>
+        <span class="chip">3mg Melatonin</span>
+        <span class="chip">5mg or 10mg THC</span>
+        <span class="chip">THC-free option</span>
+        <span class="chip">20 per bag</span>
+      </div>
+
+      <div class="hero__cta">
+        <a class="btn btn--gold btn--lg" data-link="BUY" href="https://purekana.com/products/thc-sleep-gummies?variant=48855575068912" rel="sponsored noopener" target="_blank">Shop before the cap &rarr;</a>
+        <a class="btn btn--ghost" href="#formula" style="color:#fff;border-color:rgba(255,255,255,.3)">What's in it</a>
+      </div>
+
+      <p class="hero__price">From <b>$26.21</b> <s>$34.95</s> &mdash; Buy 3, Get 1 Free at $52.42</p>
+    </div>
+  </div>
+</header>
+
+<section class="cdstrip">
+  <div class="wrap">
+    <p class="cdstrip__h">Current formulations available until the federal cap</p>
+    <div class="cd" data-countdown role="timer">
+      <div class="cd__unit"><div class="cd__n" data-cd="days">&mdash;</div><div class="cd__l">Days</div></div>
+      <div class="cd__unit"><div class="cd__n" data-cd="hours">&mdash;</div><div class="cd__l">Hours</div></div>
+      <div class="cd__unit"><div class="cd__n" data-cd="minutes">&mdash;</div><div class="cd__l">Minutes</div></div>
+      <div class="cd__unit"><div class="cd__n" data-cd="seconds">&mdash;</div><div class="cd__l">Seconds</div></div>
+    </div>
+    <p class="cdstrip__note">
+      On November 12, federal law caps finished hemp products at 0.4mg total THC per container. A 20-count 5mg bag contains 100mg.
+      <a href="explainer.html">See the statute and the math &rarr;</a>
+    </p>
+  </div>
+</section>
+
+<section class="sec" id="formula">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow">The formula</p>
+      <h2>Three ingredients, each doing one job</h2>
+      <p>Most sleep gummies are melatonin and sugar. This is a stack where each part covers a different failure point in the night.</p>
+    </div>
+
+    <div class="formula">
+      <div class="ing">
+        <p class="ing__dose">5mg</p>
+        <p class="ing__name">CBN</p>
+        <p class="ing__role">Cannabinol</p>
+        <p class="ing__body">The cannabinoid most associated with sedation. Where melatonin signals that it is time to sleep, CBN is the part of the stack people describe as physical heaviness &mdash; the settling that makes lying still feel easy.</p>
+      </div>
+      <div class="ing">
+        <p class="ing__dose">3mg</p>
+        <p class="ing__name">Melatonin</p>
+        <p class="ing__role">Sleep onset</p>
+        <p class="ing__body">A conservative dose on purpose. The 10mg megadoses common on shelves are a frequent cause of next-morning grogginess; 3mg is closer to what the body actually uses to start the cycle.</p>
+      </div>
+      <div class="ing">
+        <p class="ing__dose">5 / 10mg</p>
+        <p class="ing__name">THC</p>
+        <p class="ing__role">Choose your strength</p>
+        <p class="ing__body">Low for people new to it, high for tolerance. This is the component the November cap removes &mdash; and the reason the current bags are worth stocking. A THC-free version substitutes 25mg CBD.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--dark">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow">What the night looks like</p>
+      <h2>Onset in 30&ndash;45 minutes</h2>
+      <p>Taken about an hour before bed, on a roughly empty stomach.</p>
+    </div>
+
+    <div class="night">
+      <div class="night__step">
+        <p class="night__t">T &minus; 60 MIN</p>
+        <p class="night__h">Take one gummy</p>
+        <p class="night__b">Start with one. Huckleberry flavour, no water needed. If you are new to THC, start with the 5mg and give it three nights before adjusting.</p>
+      </div>
+      <div class="night__step">
+        <p class="night__t">30&ndash;45 MIN</p>
+        <p class="night__h">Onset</p>
+        <p class="night__b">Melatonin begins the sleep signal while the CBN takes the edge off physical restlessness. Most people describe it as the body catching up to the intention.</p>
+      </div>
+      <div class="night__step">
+        <p class="night__t">HOURS 1&ndash;3</p>
+        <p class="night__h">Falling and staying</p>
+        <p class="night__b">The window where most sleep aids have already stopped working. The stack is designed to carry through it rather than hand you back to a 2am ceiling.</p>
+      </div>
+      <div class="night__step">
+        <p class="night__t">MORNING</p>
+        <p class="night__h">No 10mg hangover</p>
+        <p class="night__b">The reason the melatonin dose is 3mg and not 10mg. The goal is waking up rested, not waking up sedated.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--tint">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow">Honest comparison</p>
+      <h2>Against what is already in your cupboard</h2>
+    </div>
+
+    <div class="cmp tbl-scroll">
+      <table class="data">
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th>This formula</th>
+            <th>Melatonin alone</th>
+            <th>Antihistamine sleep aids</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Helps you fall asleep</strong></td>
+            <td class="mark-y">Yes</td>
+            <td class="mark-y">Yes</td>
+            <td class="mark-y">Yes</td>
+          </tr>
+          <tr>
+            <td><strong>Helps you stay asleep</strong></td>
+            <td class="mark-y">Yes &mdash; CBN + THC</td>
+            <td class="mark-n">Limited</td>
+            <td class="mark-y">Often</td>
+          </tr>
+          <tr>
+            <td><strong>Next-day grogginess</strong></td>
+            <td class="mark-y">Low at 3mg melatonin</td>
+            <td class="mark-n">Common at 10mg doses</td>
+            <td class="mark-n">Frequently reported</td>
+          </tr>
+          <tr>
+            <td><strong>Tolerance build-up</strong></td>
+            <td class="mark-y">Low reported</td>
+            <td class="mark-y">Low</td>
+            <td class="mark-n">Builds quickly</td>
+          </tr>
+          <tr>
+            <td><strong>Still legal after Nov 12</strong></td>
+            <td class="mark-n">THC versions: no</td>
+            <td class="mark-y">Yes</td>
+            <td class="mark-y">Yes</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fineprint pricing__note">Comparison reflects commonly reported user experience and ingredient pharmacology, not head-to-head clinical trial data. Individual results vary.</p>
+  </div>
+</section>
+
+<section class="sec" id="pricing">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow">Pricing</p>
+      <h2>Buy at current pricing while the current formula exists</h2>
+      <p>There is no re-order after November for the THC versions. The bundles exist because stocking up is the rational move here, not because we invented a sale.</p>
+    </div>
+
+    <div class="tiers">
+      <div class="tier">
+        <p class="tier__name">Single Bag</p>
+        <p class="tier__sub">Try it first</p>
+        <div class="tier__price"><span class="tier__now">$26.21</span><span class="tier__was">$34.95</span></div>
+        <p class="tier__unit">20 gummies &middot; $1.31 each</p>
+        <ul class="tier__list">
+          <li>25% off list price</li>
+          <li>Choose 5mg, 10mg, or THC-free</li>
+          <li>Good for a two to three week trial</li>
+        </ul>
+        <a class="btn btn--ghost btn--block" data-link="BUY" href="https://purekana.com/products/thc-sleep-gummies?variant=48855575068912" rel="sponsored noopener" target="_blank">Choose this</a>
+      </div>
+
+      <div class="tier tier--best">
+        <span class="tier__flag">Best value</span>
+        <p class="tier__name">Buy 3, Get 1 Free</p>
+        <p class="tier__sub">Four bags &middot; 80 gummies</p>
+        <div class="tier__price"><span class="tier__now">$52.42</span><span class="tier__was">$139.80</span></div>
+        <p class="tier__unit">80 gummies &middot; $0.66 each</p>
+        <ul class="tier__list">
+          <li>Lowest cost per gummy by a wide margin</li>
+          <li>Roughly three months of nightly use</li>
+          <li>Carries you well past November 12</li>
+          <li>Mix strengths across the four bags</li>
+        </ul>
+        <a class="btn btn--gold btn--block" data-link="BUY" href="https://purekana.com/products/thc-sleep-gummies?variant=48855575068912" rel="sponsored noopener" target="_blank">Get 4 bags &rarr;</a>
+      </div>
+
+      <div class="tier">
+        <p class="tier__name">Buy 2, Get 1 Half Off</p>
+        <p class="tier__sub">Three bags &middot; 60 gummies</p>
+        <div class="tier__price"><span class="tier__now">$39.32</span><span class="tier__was">$104.85</span></div>
+        <p class="tier__unit">60 gummies &middot; $0.66 each</p>
+        <ul class="tier__list">
+          <li>Middle option if four bags is too many</li>
+          <li>About two months of nightly use</li>
+          <li>Also available as Subscribe &amp; Save</li>
+        </ul>
+        <a class="btn btn--ghost btn--block" data-link="BUY" href="https://purekana.com/products/thc-sleep-gummies?variant=48855575068912" rel="sponsored noopener" target="_blank">Choose this</a>
+      </div>
+    </div>
+
+    <p class="fineprint pricing__note">Prices shown as listed at time of publication and are subject to change &mdash; current pricing is confirmed at checkout. We earn a commission on purchases made through these links.</p>
+  </div>
+</section>
+
+<section class="sec sec--tint">
+  <div class="wrap">
+    <div class="guar">
+      <p class="guar__h">30-night money-back guarantee</p>
+      <p>Sleep products are personal and nobody can promise you a result. Try it for a month; if it does not do what you hoped, send it back for a refund. That is the whole policy &mdash; confirm the current terms on the product page before ordering.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow">Reviews</p>
+      <h2>What customers say</h2>
+      <p>PureKana lists 200,000+ customers. Replace the slots below with real, verifiable reviews pulled from the product page.</p>
+    </div>
+
+    <div class="quotes">
+      <div class="quote quote--slot">
+        <p class="quote__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="quote__text">[ PASTE A REAL REVIEW HERE &mdash; verbatim, from your own verified review platform. Do not paraphrase and do not invent. ]</p>
+        <p class="quote__by">Reviewer name<span>Verified purchaser &middot; date</span></p>
+      </div>
+      <div class="quote quote--slot">
+        <p class="quote__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="quote__text">[ PASTE A REAL REVIEW HERE &mdash; ideally one that speaks to staying asleep, since that is this page's core claim. ]</p>
+        <p class="quote__by">Reviewer name<span>Verified purchaser &middot; date</span></p>
+      </div>
+      <div class="quote quote--slot">
+        <p class="quote__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="quote__text">[ PASTE A REAL REVIEW HERE &mdash; a mixed or four-star review here will outperform three perfect ones. ]</p>
+        <p class="quote__by">Reviewer name<span>Verified purchaser &middot; date</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--tint">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow">Questions</p>
+      <h2>The things people actually ask</h2>
+    </div>
+
+    <div class="faq">
+      <div class="faq__item" data-faq>
+        <button type="button" aria-expanded="false">Is this actually going away in November?</button>
+        <div class="faq__a">
+          <p>The THC versions, yes. Public Law 119-37 caps finished hemp products at 0.4mg of total THC per container from November 12, 2026. A 20-count bag at 5mg per gummy holds 100mg &mdash; about 250 times the cap. There is no reformulation that fixes that.</p>
+          <p>The THC-free version, which uses 25mg CBD alongside the same CBN and melatonin, is not affected. <a href="explainer.html">Full breakdown of the law here.</a></p>
+        </div>
+      </div>
+      <div class="faq__item" data-faq>
+        <button type="button" aria-expanded="false">Will it make me feel high?</button>
+        <div class="faq__a">
+          <p>At 5mg, most people report a mild body relaxation rather than a noticeable head effect &mdash; taken an hour before bed, it usually lands as drowsiness. At 10mg it is more pronounced and is intended for people with existing tolerance.</p>
+          <p>If that is not what you want at all, the THC-free option gives you the CBN and melatonin without it.</p>
+        </div>
+      </div>
+      <div class="faq__item" data-faq>
+        <button type="button" aria-expanded="false">Which strength should I start with?</button>
+        <div class="faq__a">
+          <p>Start at 5mg, take it three nights running before judging it, and take it consistently at the same time. Cannabinoid sleep effects are more consistent on a schedule than used ad hoc. Move to 10mg only if 5mg is reliably doing nothing.</p>
+        </div>
+      </div>
+      <div class="faq__item" data-faq>
+        <button type="button" aria-expanded="false">Will I fail a drug test?</button>
+        <div class="faq__a">
+          <p>Assume yes. These contain real THC and standard employment drug screens test for THC metabolites. If you are subject to testing of any kind, choose the THC-free version &mdash; and note that even broad-spectrum CBD products carry some risk of trace THC.</p>
+        </div>
+      </div>
+      <div class="faq__item" data-faq>
+        <button type="button" aria-expanded="false">Can I take it with other medication?</button>
+        <div class="faq__a">
+          <p>Ask your doctor, genuinely. Cannabinoids interact with a number of common prescriptions through the same liver enzymes, and melatonin has its own interactions. This is not something to guess at, and it is not something we are qualified to advise on.</p>
+          <p>Do not use if pregnant or nursing. Do not drive or operate machinery after taking it. 21+ only.</p>
+        </div>
+      </div>
+      <div class="faq__item" data-faq>
+        <button type="button" aria-expanded="false">Is it legal where I live?</button>
+        <div class="faq__a">
+          <p>Federal law is only half the question &mdash; several states restrict hemp-derived THC independently, and some prohibit it outright. Shipping restrictions are applied at checkout, but the responsibility for knowing your own state's rules is yours.</p>
+        </div>
+      </div>
+      <div class="faq__item" data-faq>
+        <button type="button" aria-expanded="false">Should I stock up, honestly?</button>
+        <div class="faq__a">
+          <p>If it already works for you, yes &mdash; the bundle pricing is the cheapest this gets and there is no re-order for the THC versions after November. If you have never tried it, buy one bag first. Buying four bags of something you have not tested is not a hedge, it is a gamble.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--dark">
+  <div class="wrap final">
+    <h2><span data-days-left>78</span> nights until the formula changes</h2>
+    <p>The CBN and the melatonin will still be here in December. The THC will not. If it works for you, now is the sensible time to buy it.</p>
+
+    <div class="cd" data-countdown role="timer">
+      <div class="cd__unit"><div class="cd__n" data-cd="days">&mdash;</div><div class="cd__l">Days</div></div>
+      <div class="cd__unit"><div class="cd__n" data-cd="hours">&mdash;</div><div class="cd__l">Hours</div></div>
+      <div class="cd__unit"><div class="cd__n" data-cd="minutes">&mdash;</div><div class="cd__l">Minutes</div></div>
+      <div class="cd__unit"><div class="cd__n" data-cd="seconds">&mdash;</div><div class="cd__l">Seconds</div></div>
+    </div>
+
+    <a class="btn btn--gold btn--lg" data-link="BUY" href="https://purekana.com/products/thc-sleep-gummies?variant=48855575068912" rel="sponsored noopener" target="_blank">Shop THC Sleep Gummies &rarr;</a>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <p><strong>Affiliate disclosure.</strong> This page contains affiliate links. We earn a commission on qualifying purchases made through them, at no additional cost to you. That relationship does not change the statutory facts described here, which are cited and verifiable on our <a href="explainer.html">regulatory breakdown page</a>.</p>
+    <p><strong>These statements have not been evaluated by the Food and Drug Administration.</strong> This product is not intended to diagnose, treat, cure, or prevent any disease. It is not a substitute for medical care for a sleep disorder &mdash; persistent insomnia is worth seeing a doctor about.</p>
+    <p>For adults 21 and over only. Do not use if pregnant or nursing. Do not drive or operate machinery after use. Consult your physician before use, particularly if you take prescription medication. Keep out of reach of children and pets. Hemp-derived THC may cause a positive result on a drug screen. Availability restricted in some states.</p>
+    <p><a href="index.html">All three pages</a> &middot; <a href="explainer.html">What the law says</a> &middot; <a href="advertorial.html">Sponsored feature</a></p>
+  </div>
+</footer>
+
+<div class="sticky" data-stickybar>
+  <div class="wrap sticky__in">
+    <p class="sticky__txt">
+      From $26.21 &middot; Buy 3 Get 1 Free
+      <span><span data-days-left>78</span> days until the federal THC cap</span>
+    </p>
+    <a class="btn btn--gold" data-link="BUY" href="https://purekana.com/products/thc-sleep-gummies?variant=48855575068912" rel="sponsored noopener" target="_blank">Shop now</a>
+  </div>
+</div>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
