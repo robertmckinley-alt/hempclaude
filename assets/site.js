@@ -62,17 +62,17 @@ window.SITE = {
   });
 })();
 
-/* ---------- sticky bar reveal ---------- */
+/* ---------- floating CTA bar ----------
+   The bar is always visible (no scroll reveal). This only guards against
+   it covering the last of the page content on short viewports. */
 (function () {
-  var bar = document.querySelector('[data-stickybar]');
+  var bar = document.querySelector('.floatbar');
   if (!bar) return;
-  var trigger = document.querySelector('[data-sticky-after]') || document.querySelector('header');
-  function onScroll() {
-    var past = trigger ? trigger.getBoundingClientRect().bottom < 0 : window.scrollY > 600;
-    bar.classList.toggle('is-visible', past);
+  function fit() {
+    document.body.style.paddingBottom = (bar.offsetHeight + 12) + 'px';
   }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  fit();
+  window.addEventListener('resize', fit, { passive: true });
 })();
 
 /* ---------- FAQ accordions ---------- */

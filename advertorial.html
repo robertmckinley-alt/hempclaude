@@ -46,6 +46,11 @@
     font: 500 .82rem/1.5 var(--sans); color: var(--muted);
   }
 
+  .head__cta { margin-top: 1.7rem; display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; }
+  .head__cta .btn--outline { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
+  .head__cta .btn--outline:hover { border-color: var(--ink); }
+  .head__ctanote { margin-top: .85rem; font: 500 .78rem/1.5 var(--sans); color: var(--muted); }
+
   .figure { margin-top: 2rem; }
   .figure img { width: 100%; border-radius: var(--r-md); }
   .figure figcaption { margin-top: .7rem; font: 400 .8rem/1.55 var(--sans); color: var(--muted); }
@@ -118,7 +123,7 @@
   .foot strong { color: var(--ink-2); font-weight: 700; }
 </style>
 </head>
-<body>
+<body class="has-floatbar">
 
 <div class="sponsorbar">
   <div class="wrap sponsorbar__in">
@@ -145,6 +150,12 @@
     <span>&middot;</span>
     <span>Contains affiliate links</span>
   </div>
+
+  <div class="head__cta">
+    <a class="btn btn--alert" data-link="BUY" href="https://purekana.com/products/thc-sleep-gummies?variant=48855575068912" rel="sponsored noopener" target="_blank">See the product &rarr;</a>
+    <a class="btn btn--outline" href="#offer">Jump to the details</a>
+  </div>
+  <p class="head__ctanote">Paid link &middot; from $26.21, Buy 3 Get 1 Free &middot; <b><span data-days-left>77</span> days</b> until the federal cap.</p>
 
   <figure class="figure">
     <img src="assets/insomnia.jpg" alt="A man lying awake in a dark bedroom late at night." width="2000" height="1116" fetchpriority="high">
@@ -224,7 +235,7 @@
 
   <p>Doing both is not unreasonable either. What is unreasonable is assuming the date moves. The proposed delay is a bill that has passed one chamber, and bills that have passed one chamber fail all the time.</p>
 
-  <div class="prod">
+  <div class="prod" id="offer">
     <p class="prod__tag">The product this feature is about</p>
     <h3>PureKana THC Sleep Gummies</h3>
     <p>The stack described above, in one gummy: 5mg CBN for physical sedation, a deliberately conservative 3mg of melatonin for onset, and a choice of 5mg or 10mg THC for sleep maintenance. Huckleberry, twenty to a bag, onset in 30&ndash;45 minutes. A THC-free version swaps in 25mg CBD and is unaffected by the November cap.</p>
@@ -251,6 +262,19 @@
     <p><a href="index.html">All three pages</a> &middot; <a href="explainer.html">What the law says</a> &middot; <a href="sale.html">Product page</a></p>
   </div>
 </footer>
+
+<div class="floatbar">
+  <div class="wrap floatbar__in">
+    <div class="floatbar__copy">
+      <p class="floatbar__t">PureKana THC Sleep Gummies &mdash; from $26.21</p>
+      <p class="floatbar__s"><b><span data-days-left>77</span> days</b> until the federal THC cap</p>
+    </div>
+    <div class="floatbar__actions">
+      <a class="floatbar__alt" href="#offer">See details</a>
+      <a class="btn btn--gold" data-link="BUY" href="https://purekana.com/products/thc-sleep-gummies?variant=48855575068912" rel="sponsored noopener" target="_blank">Shop now &rarr;</a>
+    </div>
+  </div>
+</div>
 
 <script src="assets/site.js"></script>
 </body>

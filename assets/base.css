@@ -125,3 +125,48 @@ table.data tbody tr:last-child td { border-bottom: 0; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
 }
+
+/* ============================================================
+   Persistent floating CTA bar — always visible, never dismissed
+   Body gets .has-floatbar so content clears the fixed bar.
+   ============================================================ */
+body.has-floatbar { padding-bottom: 84px; }
+@media (max-width: 640px) { body.has-floatbar { padding-bottom: 96px; } }
+
+.floatbar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+  background: rgba(14,19,30,.975);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  backdrop-filter: blur(12px) saturate(140%);
+  border-top: 1px solid rgba(255,255,255,.15);
+  box-shadow: 0 -6px 26px rgba(0,0,0,.3);
+  color: #fff;
+  padding-block: .72rem;
+  padding-bottom: calc(.72rem + env(safe-area-inset-bottom, 0px));
+}
+.floatbar__in { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.floatbar__copy { min-width: 0; }
+.floatbar__t {
+  font: 700 .95rem/1.3 var(--sans); letter-spacing: -.012em;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.floatbar__s { margin-top: .18rem; font: 500 .78rem/1.35 var(--sans); color: #a6b2c4; }
+.floatbar__s b { color: var(--gold-lt); font-weight: 700; }
+.floatbar__actions { display: flex; align-items: center; gap: .6rem; flex: 0 0 auto; }
+.floatbar .btn { white-space: nowrap; padding: .85rem 1.6rem; font-size: .94rem; }
+.floatbar__alt {
+  font: 600 .82rem/1 var(--sans); color: #9fb0c6;
+  text-decoration: none; padding: .5rem .2rem; border-bottom: 1px solid rgba(255,255,255,.22);
+}
+.floatbar__alt:hover { color: #fff; border-bottom-color: #fff; }
+
+@media (max-width: 780px) { .floatbar__alt { display: none; } }
+@media (max-width: 640px) {
+  .floatbar__t { font-size: .86rem; }
+  .floatbar__s { font-size: .73rem; }
+  .floatbar .btn { padding: .8rem 1.15rem; font-size: .88rem; }
+}
+@media (max-width: 380px) {
+  .floatbar__t { white-space: normal; font-size: .8rem; }
+  .floatbar .btn { padding: .75rem .95rem; font-size: .84rem; }
+}

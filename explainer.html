@@ -37,6 +37,11 @@
   .hero__sub { margin-top: 1.35rem; max-width: 56ch; font: 400 clamp(1.06rem, 2vw, 1.24rem)/1.62 var(--serif); color: #c3ccd8; }
   .hero__byline { margin-top: 1.8rem; font: 500 .82rem/1.6 var(--sans); color: #8fa0b3; }
 
+  .hero__cta { margin-top: 2.1rem; display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
+  .hero__cta .btn--outline { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.32); }
+  .hero__cta .btn--outline:hover { border-color: #fff; }
+  .hero__ctanote { margin-top: .9rem; font: 500 .78rem/1.5 var(--sans); color: #7f8fa2; }
+
   .hero__cd { margin-top: 2.4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,.14); }
   .hero__cd h2 { font: 600 .7rem/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: #ff9d94; text-align: center; margin-bottom: 1.1rem; }
   .hero .cd__unit { min-width: 82px; }
@@ -144,7 +149,7 @@
   }
 </style>
 </head>
-<body>
+<body class="has-floatbar">
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="masthead">
@@ -161,6 +166,12 @@
     <h1>In <span data-days-left>78</span> days, most hemp THC products become federally unlawful.</h1>
     <p class="hero__sub">Not a rumour, not a proposal. It is signed law &mdash; Public Law 119-37, Section 781 &mdash; and it takes effect on November&nbsp;12,&nbsp;2026. Here is exactly what it changes, in plain English.</p>
     <p class="hero__byline">Editorial &amp; commentary &middot; Approx. 7 minute read &middot; Sources linked throughout</p>
+
+    <div class="hero__cta">
+      <a class="btn btn--alert btn--lg" data-link="BUY" href="https://purekana.com/products/thc-sleep-gummies?variant=48855575068912" rel="sponsored noopener" target="_blank">See what's still available &rarr;</a>
+      <a class="btn btn--outline" href="#the-math">Read the analysis first</a>
+    </div>
+    <p class="hero__ctanote">Affiliate link &middot; we earn a commission. The statutory citations below are independently verifiable.</p>
 
     <div class="hero__cd">
       <h2>Time remaining until the federal standard changes</h2>
@@ -337,6 +348,19 @@
     <p><a href="index.html">&larr; All three pages</a></p>
   </div>
 </footer>
+
+<div class="floatbar">
+  <div class="wrap floatbar__in">
+    <div class="floatbar__copy">
+      <p class="floatbar__t">Products affected by the cap &mdash; available today</p>
+      <p class="floatbar__s"><b><span data-days-left>77</span> days</b> until November 12</p>
+    </div>
+    <div class="floatbar__actions">
+      <a class="floatbar__alt" href="sale.html">Compare options</a>
+      <a class="btn btn--alert" data-link="BUY" href="https://purekana.com/products/thc-sleep-gummies?variant=48855575068912" rel="sponsored noopener" target="_blank">Shop now &rarr;</a>
+    </div>
+  </div>
+</div>
 
 <script src="assets/site.js"></script>
 </body>
