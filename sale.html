@@ -26,10 +26,27 @@
   .hero__img img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%; opacity: .55; }
   .hero::after {
     content: ""; position: absolute; inset: 0;
-    background: linear-gradient(100deg, rgba(20,26,46,.96) 0%, rgba(20,26,46,.86) 42%, rgba(20,26,46,.4) 78%, rgba(20,26,46,.55) 100%);
+    background: linear-gradient(100deg, rgba(20,26,46,.97) 0%, rgba(20,26,46,.93) 45%, rgba(20,26,46,.88) 100%);
   }
-  .hero__in { position: relative; z-index: 2; padding-block: clamp(3rem, 8vw, 5.5rem); }
-  .hero__copy { max-width: 34rem; }
+  .hero__in { position: relative; z-index: 2; padding-block: clamp(2.5rem, 6vw, 4.5rem); }
+  /* Hero layout.
+     Mobile  : headline -> video -> CTA (video stays above the fold).
+     Desktop : copy column left, video pinned right across both copy rows. */
+  .hero__grid { display: grid; gap: 1.8rem; }
+  .hero__lead, .hero__rest { max-width: 34rem; }
+  .hero__media .vid { margin-block: 0; }
+  .hero__media .vid__frame { box-shadow: 0 18px 44px rgba(0,0,0,.5); }
+
+  @media (min-width: 980px) {
+    .hero__grid {
+      grid-template-columns: 1.05fr .95fr;
+      grid-template-areas: "lead media" "rest media";
+      gap: 1.5rem 3.2rem; align-items: start;
+    }
+    .hero__lead  { grid-area: lead; max-width: none; }
+    .hero__rest  { grid-area: rest; max-width: none; }
+    .hero__media { grid-area: media; align-self: center; }
+  }
   .hero .eyebrow { color: var(--gold-lt); }
   .hero h1 {
     margin-top: 1rem;
@@ -39,6 +56,7 @@
   .hero h1 em { font-style: normal; color: var(--gold-lt); }
   .hero__sub { margin-top: 1.3rem; font: 400 clamp(1.04rem, 2vw, 1.18rem)/1.62 var(--sans); color: #c6cde0; }
 
+  .hero__rest > .hero__facts:first-child { margin-top: 0; }
   .hero__facts { margin-top: 1.9rem; display: flex; flex-wrap: wrap; gap: .5rem; }
   .chip {
     padding: .5rem .95rem; border-radius: 999px;
@@ -211,11 +229,35 @@
 <header class="hero">
   <div class="hero__img"><img src="assets/sleep-calm.jpg" alt="A woman sleeping peacefully in a softly lit bedroom at night." width="2000" height="1116" fetchpriority="high"></div>
   <div class="wrap hero__in">
-    <div class="hero__copy">
+    <div class="hero__grid">
+    <div class="hero__lead">
       <p class="eyebrow">CBN &middot; Melatonin &middot; THC Sleep Formula</p>
       <h1>Asleep in 30 minutes. <em>Still asleep at 4am.</em></h1>
       <p class="hero__sub">Most sleep aids get you down but not through the night. This one stacks 5mg CBN and 3mg melatonin with a low, deliberate dose of THC &mdash; built for staying asleep, not just falling asleep.</p>
 
+    </div>
+
+    <div class="hero__media">
+      <figure class="vid vid--dark">
+        <div class="vid__head">
+          <span class="vid__tag">Watch</span>
+          <span class="vid__t">Federal THC ban sends hemp companies scrambling</span>
+        </div>
+        <div class="vid__frame">
+          <iframe src="https://www.youtube-nocookie.com/embed/Pj7OqIDjmEg?rel=0&amp;modestbranding=1"
+                  title="Federal THC Ban Sends Hemp Companies Scrambling &mdash; The Hill"
+                  loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+        </div>
+        <figcaption class="vid__credit">
+          Video: <a href="https://www.youtube.com/watch?v=Pj7OqIDjmEg" rel="noopener" target="_blank">The Hill</a>, via YouTube.
+          <em>The Hill is an independent news organisation. It is not affiliated with, and does not endorse, any product on this page.</em>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="hero__rest">
       <div class="hero__facts">
         <span class="chip">5mg CBN</span>
         <span class="chip">3mg Melatonin</span>
@@ -237,6 +279,9 @@
         <span><b>&#10003;</b> THC-free option available</span>
       </p>
     </div>
+
+
+    </div>
   </div>
 </header>
 
@@ -255,38 +300,6 @@
     </p>
     <p class="cdstrip__cta">
       <a class="btn btn--gold" data-link="BUY" href="https://purekana.com/products/thc-sleep-gummies?variant=48855575068912" rel="sponsored noopener" target="_blank">Stock up before November 12 &rarr;</a>
-    </p>
-  </div>
-</section>
-
-<section class="sec sec--dark" style="padding-block:clamp(2.5rem,5vw,3.5rem)">
-  <div class="wrap" style="max-width:52rem">
-    <div class="sec__head" style="margin-bottom:1.6rem">
-      <p class="eyebrow">Don't take our word for it</p>
-      <h2>National coverage of the November deadline</h2>
-      <p>The cap is being reported on well beyond the hemp trade press. Here is The Hill on what it is doing to the industry.</p>
-    </div>
-
-    <figure class="vid vid--dark" style="margin-block:0">
-      <div class="vid__head">
-        <span class="vid__tag">Watch</span>
-        <span class="vid__t">Federal THC ban sends hemp companies scrambling</span>
-      </div>
-      <div class="vid__frame">
-        <iframe src="https://www.youtube-nocookie.com/embed/Pj7OqIDjmEg?rel=0&amp;modestbranding=1"
-                title="Federal THC Ban Sends Hemp Companies Scrambling &mdash; The Hill"
-                loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-      </div>
-      <figcaption class="vid__credit">
-        Video: <a href="https://www.youtube.com/watch?v=Pj7OqIDjmEg" rel="noopener" target="_blank">The Hill</a>, via YouTube.
-        <em>The Hill is an independent news organisation. It is not affiliated with, and does not endorse, any product on this page.</em>
-      </figcaption>
-    </figure>
-
-    <p style="margin-top:1.8rem;text-align:center">
-      <a class="btn btn--gold btn--lg" data-link="BUY" href="https://purekana.com/products/thc-sleep-gummies?variant=48855575068912" rel="sponsored noopener" target="_blank">Shop before the cap &rarr;</a>
     </p>
   </div>
 </section>

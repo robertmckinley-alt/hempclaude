@@ -83,9 +83,12 @@ nothing needs inventing. Specifically:
 All three pages embed The Hill's report *"Federal THC Ban Sends Hemp Companies Scrambling"*
 (YouTube `Pj7OqIDjmEg`) as third-party corroboration of the deadline:
 
-- **explainer.html** — between the definition table and the 0.4mg arithmetic
-- **sale.html** — dedicated "Don't take our word for it" section under the countdown
-- **advertorial.html** — after the stat row, before the countdown box
+- **sale.html** — inside the hero: two-column on desktop, and on mobile the DOM
+  order is headline -> video -> CTA so it clears the fold
+- **explainer.html** — inside the hero, between the CTA pair and the countdown
+- **advertorial.html** — lead visual under the byline, above the CTA pair
+
+Verified above the fold at 390/768/1440px on all three, with zero horizontal overflow.
 
 Served from `youtube-nocookie.com` with `loading="lazy"`, so it sets no cookies and costs
 nothing on first paint until the viewer clicks play.
