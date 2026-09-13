@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../ad.css">
+<style>
+:root{--bg:#fbfaf6;--ink:#10151c;--mut:#8a8578;--em:#b3261e}
+.ad{background:var(--bg)}
+.rule{position:absolute;left:60px;right:60px;height:4px;background:var(--ink)}
+.line{position:absolute;left:60px;right:60px;font:900 {{H1SIZE}}px/1 Inter;letter-spacing:-.045em;color:var(--ink)}
+.line .m{color:var(--mut)}
+.line .r{color:var(--em)}
+.kicker{position:absolute;left:60px;top:70px;font:700 20px/1 Inter;letter-spacing:.24em;text-transform:uppercase;color:var(--em)}
+.pay{position:absolute;left:60px;right:60px;top:488px;font:700 32px/1.3 Inter;letter-spacing:-.02em;color:#3b3a36}
+.cup{position:absolute;left:60px;right:60px;bottom:195px;height:270px;border:8px solid var(--ink);border-radius:12px;background:#fff}
+.cup::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:8px;background:var(--ink);transform:translateX(-50%)}
+.cup .knob{position:absolute;top:50%;width:22px;height:22px;border-radius:50%;background:var(--ink);transform:translateY(-50%)}
+.cup .knob.l{right:calc(50% + 20px)}.cup .knob.r{left:calc(50% + 20px)}
+.cup img{position:absolute;bottom:14px;filter:drop-shadow(0 8px 10px rgba(0,0,0,.2))}
+.cta{left:50%;transform:translateX(-50%);bottom:96px}
+.legal{bottom:0}
+{{CSS}}
+</style></head><body><div class="ad">
+<div class="kicker">{{KICKER}}</div>
+<div class="line" style="top:112px">{{L1}}</div>
+<div class="rule" style="top:288px"></div>
+<div class="line" style="top:312px">{{L2}}</div>
+<div class="pay">{{PAY}}</div>
+<div class="cup"><div class="knob l"></div><div class="knob r"></div>{{IMGS}}</div>
+<a class="cta cta--red">{{CTA}} <span>{{CTA2}}</span></a>
+<div class="legal legal--light"><span class="age">21+</span><span>Hemp-derived THC · purekana.com</span></div>
+</div></body></html>

@@ -1,0 +1,32 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../ad.css">
+<style>
+:root{--bg:#07080f;--g1:#ff2d6e;--g2:#2ee6ff;--t2:#8ef7ff}
+.ad{background:var(--bg)}
+.ad::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse 70% 55% at 50% 22%,color-mix(in srgb,var(--g1) 28%,transparent),transparent 60%),
+             radial-gradient(ellipse 80% 40% at 50% 100%,rgba(30,40,80,.9),transparent 70%)}
+.bar{position:absolute;left:0;right:0;bottom:120px;height:26px;background:linear-gradient(180deg,#3a2a1f,#1b130e);box-shadow:0 -6px 30px rgba(0,0,0,.6)}
+.bar::after{content:"";position:absolute;left:0;right:0;top:26px;height:80px;background:linear-gradient(180deg,#1b130e,#0b0806)}
+.neon{position:absolute;left:40px;right:40px;top:92px;text-align:center;font:400 {{H1SIZE}}px/1 Bebas;letter-spacing:.04em;color:#fff;
+  text-shadow:0 0 6px #fff,0 0 14px var(--g1),0 0 32px var(--g1),0 0 70px var(--g1),0 0 120px var(--g1)}
+.neon2{position:absolute;left:40px;right:40px;top:336px;text-align:center;font:400 88px/1 Bebas;letter-spacing:.14em;color:var(--t2);
+  text-shadow:0 0 5px #fff,0 0 12px var(--g2),0 0 30px var(--g2),0 0 60px var(--g2)}
+.sub{position:absolute;left:60px;right:60px;top:438px;text-align:center;font:500 29px/1.35 Inter;color:rgba(255,255,255,.78)}
+.sub b{color:#fff;font-weight:700}
+.bags{position:absolute;bottom:146px;left:50%;transform:translateX(-50%);display:flex;align-items:flex-end}
+.bags img{height:376px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.7))}
+.bags img:nth-child(1){transform:rotate(-6deg) translateX(28px)}
+.bags img:nth-child(2){transform:rotate(5deg) translateX(-28px);height:352px}
+.bags img:only-child{transform:none;height:416px}
+.cta{left:50%;transform:translateX(-50%);bottom:36px}
+.legal{bottom:auto;top:18px}
+{{CSS}}
+</style></head><body><div class="ad">
+<div class="legal legal--dark"><span class="age">21+</span><span>Hemp-derived THC · purekana.com</span></div>
+<div class="neon">{{H1}}</div>
+<div class="neon2">{{H2}}</div>
+<p class="sub">{{SUB}}</p>
+<div class="bar"></div>
+<div class="bags">{{IMGS}}</div>
+<a class="cta cta--red">{{CTA}} <span>{{CTA2}}</span></a>
+</div></body></html>

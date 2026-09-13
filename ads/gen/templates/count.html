@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../ad.css">
+<style>
+:root{--bg:#b3261e;--lbl:#ffd9d6}
+.ad{background:var(--bg)}
+.ad::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 30%,rgba(255,255,255,.12),transparent 70%)}
+.num{position:absolute;left:0;right:0;top:20px;text-align:center;font:400 {{NUMSIZE}}px/1 Bebas;color:#fff;letter-spacing:-.02em;text-shadow:0 20px 0 rgba(0,0,0,.18)}
+.lbl{position:absolute;left:0;right:0;top:600px;text-align:center;font:400 110px/1 Bebas;letter-spacing:.14em;color:var(--lbl)}
+.math{position:absolute;left:80px;right:330px;top:730px;text-align:center;font:700 36px/1.35 Inter;color:#fff;letter-spacing:-.01em}
+.math b{color:var(--lbl);font-weight:900}
+.bag{position:absolute;right:30px;top:540px;width:215px;transform:rotate(8deg);filter:drop-shadow(0 24px 30px rgba(0,0,0,.45))}
+.bag.wide{right:10px;top:600px;width:330px;transform:rotate(4deg)}
+.cta{left:50%;transform:translateX(-50%);bottom:96px}
+.legal{bottom:0;color:rgba(255,255,255,.7)}
+.note{position:absolute;top:24px;left:40px;font:700 18px/1 Courier;letter-spacing:.12em;color:rgba(255,255,255,.6)}
+{{CSS}}
+</style></head><body><div class="ad">
+<div class="note">{{NOTE}}</div>
+<div class="num">{{NUM}}</div>
+<div class="lbl">{{LBL}}</div>
+<div class="math">{{MATH}}</div>
+<img class="bag {{IMGCLASS}}" src="{{IMG}}">
+<a class="cta cta--white">{{CTA}} <span>{{CTA2}}</span></a>
+<div class="legal"><span class="age">21+</span><span>Hemp-derived THC · purekana.com</span></div>
+</div></body></html>

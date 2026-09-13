@@ -1,0 +1,1602 @@
+[
+ {
+  "name": "sleep-01-last-call-v01",
+  "line": "sleep",
+  "concept": "01-last-call",
+  "v": 1,
+  "template": "neon",
+  "h1": "LAST CALL"
+ },
+ {
+  "name": "sleep-01-last-call-v02",
+  "line": "sleep",
+  "concept": "01-last-call",
+  "v": 2,
+  "template": "neon",
+  "h1": "LAST CALL"
+ },
+ {
+  "name": "sleep-01-last-call-v03",
+  "line": "sleep",
+  "concept": "01-last-call",
+  "v": 3,
+  "template": "neon",
+  "h1": "LAST ORDERS"
+ },
+ {
+  "name": "sleep-01-last-call-v04",
+  "line": "sleep",
+  "concept": "01-last-call",
+  "v": 4,
+  "template": "neon",
+  "h1": "CLOSING TIME"
+ },
+ {
+  "name": "sleep-01-last-call-v05",
+  "line": "sleep",
+  "concept": "01-last-call",
+  "v": 5,
+  "template": "neon",
+  "h1": "LAST CALL"
+ },
+ {
+  "name": "sleep-01-last-call-v06",
+  "line": "sleep",
+  "concept": "01-last-call",
+  "v": 6,
+  "template": "neon",
+  "h1": "ONE MORE"
+ },
+ {
+  "name": "sleep-01-last-call-v07",
+  "line": "sleep",
+  "concept": "01-last-call",
+  "v": 7,
+  "template": "neon",
+  "h1": "LAST CALL"
+ },
+ {
+  "name": "sleep-01-last-call-v08",
+  "line": "sleep",
+  "concept": "01-last-call",
+  "v": 8,
+  "template": "neon",
+  "h1": "TAB'S CLOSING"
+ },
+ {
+  "name": "sleep-01-last-call-v09",
+  "line": "sleep",
+  "concept": "01-last-call",
+  "v": 9,
+  "template": "neon",
+  "h1": "LAST CALL"
+ },
+ {
+  "name": "sleep-01-last-call-v10",
+  "line": "sleep",
+  "concept": "01-last-call",
+  "v": 10,
+  "template": "neon",
+  "h1": "LIGHTS UP"
+ },
+ {
+  "name": "sleep-02-endangered-v01",
+  "line": "sleep",
+  "concept": "02-endangered",
+  "v": 1,
+  "template": "doc",
+  "h1": "The THC Sleep Gummy"
+ },
+ {
+  "name": "sleep-02-endangered-v02",
+  "line": "sleep",
+  "concept": "02-endangered",
+  "v": 2,
+  "template": "doc",
+  "h1": "The Huckleberry Sleep Gummy"
+ },
+ {
+  "name": "sleep-02-endangered-v03",
+  "line": "sleep",
+  "concept": "02-endangered",
+  "v": 3,
+  "template": "doc",
+  "h1": "Homo Insomniac"
+ },
+ {
+  "name": "sleep-02-endangered-v04",
+  "line": "sleep",
+  "concept": "02-endangered",
+  "v": 4,
+  "template": "doc",
+  "h1": "The Nightstand"
+ },
+ {
+  "name": "sleep-02-endangered-v05",
+  "line": "sleep",
+  "concept": "02-endangered",
+  "v": 5,
+  "template": "doc",
+  "h1": "The THC Sleep Gummy"
+ },
+ {
+  "name": "sleep-02-endangered-v06",
+  "line": "sleep",
+  "concept": "02-endangered",
+  "v": 6,
+  "template": "doc",
+  "h1": "Migration: The Cupboard"
+ },
+ {
+  "name": "sleep-02-endangered-v07",
+  "line": "sleep",
+  "concept": "02-endangered",
+  "v": 7,
+  "template": "doc",
+  "h1": "The 5mg Sleeper"
+ },
+ {
+  "name": "sleep-02-endangered-v08",
+  "line": "sleep",
+  "concept": "02-endangered",
+  "v": 8,
+  "template": "doc",
+  "h1": "The Last Batch"
+ },
+ {
+  "name": "sleep-02-endangered-v09",
+  "line": "sleep",
+  "concept": "02-endangered",
+  "v": 9,
+  "template": "doc",
+  "h1": "The THC Sleep Gummy"
+ },
+ {
+  "name": "sleep-02-endangered-v10",
+  "line": "sleep",
+  "concept": "02-endangered",
+  "v": 10,
+  "template": "doc",
+  "h1": "Extinction Event"
+ },
+ {
+  "name": "sleep-03-prepper-v01",
+  "line": "sleep",
+  "concept": "03-prepper",
+  "v": 1,
+  "template": "shelf",
+  "h1": "Some people stockpile beans. Smart people stockpile sleep."
+ },
+ {
+  "name": "sleep-03-prepper-v02",
+  "line": "sleep",
+  "concept": "03-prepper",
+  "v": 2,
+  "template": "shelf",
+  "h1": "Bunker rule #1: never run out of sleep."
+ },
+ {
+  "name": "sleep-03-prepper-v03",
+  "line": "sleep",
+  "concept": "03-prepper",
+  "v": 3,
+  "template": "shelf",
+  "h1": "Canned goods: optional. Sleep gummies: essential."
+ },
+ {
+  "name": "sleep-03-prepper-v04",
+  "line": "sleep",
+  "concept": "03-prepper",
+  "v": 4,
+  "template": "shelf",
+  "h1": "The only shortage worth prepping for is sleep."
+ },
+ {
+  "name": "sleep-03-prepper-v05",
+  "line": "sleep",
+  "concept": "03-prepper",
+  "v": 5,
+  "template": "shelf",
+  "h1": "89 days. 20 per bag. Do the shelf math."
+ },
+ {
+  "name": "sleep-03-prepper-v06",
+  "line": "sleep",
+  "concept": "03-prepper",
+  "v": 6,
+  "template": "shelf",
+  "h1": "Doomsday is vague. December 11 is a date."
+ },
+ {
+  "name": "sleep-03-prepper-v07",
+  "line": "sleep",
+  "concept": "03-prepper",
+  "v": 7,
+  "template": "shelf",
+  "h1": "Stack them now. Sleep on it later."
+ },
+ {
+  "name": "sleep-03-prepper-v08",
+  "line": "sleep",
+  "concept": "03-prepper",
+  "v": 8,
+  "template": "shelf",
+  "h1": "Your winter sleep supply ships until Dec 11."
+ },
+ {
+  "name": "sleep-03-prepper-v09",
+  "line": "sleep",
+  "concept": "03-prepper",
+  "v": 9,
+  "template": "shelf",
+  "h1": "Prepping for the apocalypse? Start with bedtime."
+ },
+ {
+  "name": "sleep-03-prepper-v10",
+  "line": "sleep",
+  "concept": "03-prepper",
+  "v": 10,
+  "template": "shelf",
+  "h1": "Bulk buy. Deep sleep. No regrets in January."
+ },
+ {
+  "name": "sleep-04-point-four-v01",
+  "line": "sleep",
+  "concept": "04-point-four",
+  "v": 1,
+  "template": "compare",
+  "h1": "After Dec 11, a legal bag can hold 0.4mg of THC. Yours has 100mg. That's not a gummy. That's a rumor."
+ },
+ {
+  "name": "sleep-04-point-four-v02",
+  "line": "sleep",
+  "concept": "04-point-four",
+  "v": 2,
+  "template": "compare",
+  "h1": "250× over the new limit. Buy the real one while it's real."
+ },
+ {
+  "name": "sleep-04-point-four-v03",
+  "line": "sleep",
+  "concept": "04-point-four",
+  "v": 3,
+  "template": "compare",
+  "h1": "New federal max: 0.4mg per bag. That's not a dose. That's a crumb."
+ },
+ {
+  "name": "sleep-04-point-four-v04",
+  "line": "sleep",
+  "concept": "04-point-four",
+  "v": 4,
+  "template": "compare",
+  "h1": "One gummy today has more THC than 12 whole bags will be allowed after December 11."
+ },
+ {
+  "name": "sleep-04-point-four-v05",
+  "line": "sleep",
+  "concept": "04-point-four",
+  "v": 5,
+  "template": "compare",
+  "h1": "Congress's idea of a sleep gummy: 0.02mg each. Ours: 5mg. Pick one before Dec 11."
+ },
+ {
+  "name": "sleep-04-point-four-v06",
+  "line": "sleep",
+  "concept": "04-point-four",
+  "v": 6,
+  "template": "compare",
+  "h1": "The math Congress did: 0.4mg per bag. The math you should do: how many bags until spring."
+ },
+ {
+  "name": "sleep-04-point-four-v07",
+  "line": "sleep",
+  "concept": "04-point-four",
+  "v": 7,
+  "template": "compare",
+  "h1": "After December 11, \"THC gummy\" means a rounding error. Stock the real thing."
+ },
+ {
+  "name": "sleep-04-point-four-v08",
+  "line": "sleep",
+  "concept": "04-point-four",
+  "v": 8,
+  "template": "compare",
+  "h1": "Your bag: 100mg. Legal bag after Dec 11: 0.4mg. One of these helps you sleep."
+ },
+ {
+  "name": "sleep-04-point-four-v09",
+  "line": "sleep",
+  "concept": "04-point-four",
+  "v": 9,
+  "template": "compare",
+  "h1": "They didn't lower the dose. They deleted it. December 11."
+ },
+ {
+  "name": "sleep-04-point-four-v10",
+  "line": "sleep",
+  "concept": "04-point-four",
+  "v": 10,
+  "template": "compare",
+  "h1": "Per-container cap: 0.4mg. Per gummy that leaves: 0.02mg. Not a reformulation. A removal."
+ },
+ {
+  "name": "sleep-05-stocking-v01",
+  "line": "sleep",
+  "concept": "05-stocking",
+  "v": 1,
+  "template": "stocking",
+  "h1": "Stocking stuffers are about to get very boring."
+ },
+ {
+  "name": "sleep-05-stocking-v02",
+  "line": "sleep",
+  "concept": "05-stocking",
+  "v": 2,
+  "template": "stocking",
+  "h1": "Santa's cutoff is Dec 24. Congress's is Dec 11."
+ },
+ {
+  "name": "sleep-05-stocking-v03",
+  "line": "sleep",
+  "concept": "05-stocking",
+  "v": 3,
+  "template": "stocking",
+  "h1": "Give the gift of actually sleeping."
+ },
+ {
+  "name": "sleep-05-stocking-v04",
+  "line": "sleep",
+  "concept": "05-stocking",
+  "v": 4,
+  "template": "stocking",
+  "h1": "This year's must-have gift won't exist next year."
+ },
+ {
+  "name": "sleep-05-stocking-v05",
+  "line": "sleep",
+  "concept": "05-stocking",
+  "v": 5,
+  "template": "stocking",
+  "h1": "Naughty list: Congress. Nice list: you, if you order now."
+ },
+ {
+  "name": "sleep-05-stocking-v06",
+  "line": "sleep",
+  "concept": "05-stocking",
+  "v": 6,
+  "template": "stocking",
+  "h1": "Every stocking on the block is getting melatonin."
+ },
+ {
+  "name": "sleep-05-stocking-v07",
+  "line": "sleep",
+  "concept": "05-stocking",
+  "v": 7,
+  "template": "stocking",
+  "h1": "Ho ho hurry."
+ },
+ {
+  "name": "sleep-05-stocking-v08",
+  "line": "sleep",
+  "concept": "05-stocking",
+  "v": 8,
+  "template": "stocking",
+  "h1": "Christmas is Dec 25. The cap is Dec 11."
+ },
+ {
+  "name": "sleep-05-stocking-v09",
+  "line": "sleep",
+  "concept": "05-stocking",
+  "v": 9,
+  "template": "stocking",
+  "h1": "The gift they'll actually use every night."
+ },
+ {
+  "name": "sleep-05-stocking-v10",
+  "line": "sleep",
+  "concept": "05-stocking",
+  "v": 10,
+  "template": "stocking",
+  "h1": "For the person who has everything: sleep. Before Dec 11."
+ },
+ {
+  "name": "sleep-06-thanksgiving-v01",
+  "line": "sleep",
+  "concept": "06-thanksgiving",
+  "v": 1,
+  "template": "calendar",
+  "h1": "The in-laws arrive Nov 26. Your gummies leave Dec 11."
+ },
+ {
+  "name": "sleep-06-thanksgiving-v02",
+  "line": "sleep",
+  "concept": "06-thanksgiving",
+  "v": 2,
+  "template": "calendar",
+  "h1": "Thanksgiving is 4 nights. The cap is forever."
+ },
+ {
+  "name": "sleep-06-thanksgiving-v03",
+  "line": "sleep",
+  "concept": "06-thanksgiving",
+  "v": 3,
+  "template": "calendar",
+  "h1": "Guest room. Air mattress. Your cousin's podcast opinions."
+ },
+ {
+  "name": "sleep-06-thanksgiving-v04",
+  "line": "sleep",
+  "concept": "06-thanksgiving",
+  "v": 4,
+  "template": "calendar",
+  "h1": "Nov 26: family arrives. Dec 11: sleep gummies don't."
+ },
+ {
+  "name": "sleep-06-thanksgiving-v05",
+  "line": "sleep",
+  "concept": "06-thanksgiving",
+  "v": 5,
+  "template": "calendar",
+  "h1": "Turkey coma isn't enough. Not with that many people."
+ },
+ {
+  "name": "sleep-06-thanksgiving-v06",
+  "line": "sleep",
+  "concept": "06-thanksgiving",
+  "v": 6,
+  "template": "calendar",
+  "h1": "Survive Thanksgiving. Then survive December."
+ },
+ {
+  "name": "sleep-06-thanksgiving-v07",
+  "line": "sleep",
+  "concept": "06-thanksgiving",
+  "v": 7,
+  "template": "calendar",
+  "h1": "15 days between the in-laws and the federal cap."
+ },
+ {
+  "name": "sleep-06-thanksgiving-v08",
+  "line": "sleep",
+  "concept": "06-thanksgiving",
+  "v": 8,
+  "template": "calendar",
+  "h1": "Black Friday is the 27th. The real deadline is the 11th."
+ },
+ {
+  "name": "sleep-06-thanksgiving-v09",
+  "line": "sleep",
+  "concept": "06-thanksgiving",
+  "v": 9,
+  "template": "calendar",
+  "h1": "\"So, what are you doing with your life?\""
+ },
+ {
+  "name": "sleep-06-thanksgiving-v10",
+  "line": "sleep",
+  "concept": "06-thanksgiving",
+  "v": 10,
+  "template": "calendar",
+  "h1": "Thanksgiving. Office party. Then the cap."
+ },
+ {
+  "name": "sleep-07-farewell-tour-v01",
+  "line": "sleep",
+  "concept": "07-farewell-tour",
+  "v": 1,
+  "template": "poster",
+  "h1": "THC Sleep Gummies"
+ },
+ {
+  "name": "sleep-07-farewell-tour-v02",
+  "line": "sleep",
+  "concept": "07-farewell-tour",
+  "v": 2,
+  "template": "poster",
+  "h1": "THC Sleep Gummies"
+ },
+ {
+  "name": "sleep-07-farewell-tour-v03",
+  "line": "sleep",
+  "concept": "07-farewell-tour",
+  "v": 3,
+  "template": "poster",
+  "h1": "Huckle- berry"
+ },
+ {
+  "name": "sleep-07-farewell-tour-v04",
+  "line": "sleep",
+  "concept": "07-farewell-tour",
+  "v": 4,
+  "template": "poster",
+  "h1": "5mg CBN 3mg Melatonin 5mg THC"
+ },
+ {
+  "name": "sleep-07-farewell-tour-v05",
+  "line": "sleep",
+  "concept": "07-farewell-tour",
+  "v": 5,
+  "template": "poster",
+  "h1": "THC Sleep Gummies"
+ },
+ {
+  "name": "sleep-07-farewell-tour-v06",
+  "line": "sleep",
+  "concept": "07-farewell-tour",
+  "v": 6,
+  "template": "poster",
+  "h1": "THC Sleep Gummies"
+ },
+ {
+  "name": "sleep-07-farewell-tour-v07",
+  "line": "sleep",
+  "concept": "07-farewell-tour",
+  "v": 7,
+  "template": "poster",
+  "h1": "THC Sleep Gummies"
+ },
+ {
+  "name": "sleep-07-farewell-tour-v08",
+  "line": "sleep",
+  "concept": "07-farewell-tour",
+  "v": 8,
+  "template": "poster",
+  "h1": "Sleep Gummies"
+ },
+ {
+  "name": "sleep-07-farewell-tour-v09",
+  "line": "sleep",
+  "concept": "07-farewell-tour",
+  "v": 9,
+  "template": "poster",
+  "h1": "The Last Bags"
+ },
+ {
+  "name": "sleep-07-farewell-tour-v10",
+  "line": "sleep",
+  "concept": "07-farewell-tour",
+  "v": 10,
+  "template": "poster",
+  "h1": "THC Sleep Gummies"
+ },
+ {
+  "name": "sleep-08-sleep-through-v01",
+  "line": "sleep",
+  "concept": "08-sleep-through",
+  "v": 1,
+  "template": "night",
+  "h1": "They're taking your sleep gummies December 11. Sleep through it."
+ },
+ {
+  "name": "sleep-08-sleep-through-v02",
+  "line": "sleep",
+  "concept": "08-sleep-through",
+  "v": 2,
+  "template": "night",
+  "h1": "The ban is loud. You'll be asleep."
+ },
+ {
+  "name": "sleep-08-sleep-through-v03",
+  "line": "sleep",
+  "concept": "08-sleep-through",
+  "v": 3,
+  "template": "night",
+  "h1": "Congress kept you up. Don't let them win."
+ },
+ {
+  "name": "sleep-08-sleep-through-v04",
+  "line": "sleep",
+  "concept": "08-sleep-through",
+  "v": 4,
+  "template": "night",
+  "h1": "Winter is long. The deadline isn't."
+ },
+ {
+  "name": "sleep-08-sleep-through-v05",
+  "line": "sleep",
+  "concept": "08-sleep-through",
+  "v": 5,
+  "template": "night",
+  "h1": "Hit snooze on the ban. Literally."
+ },
+ {
+  "name": "sleep-08-sleep-through-v06",
+  "line": "sleep",
+  "concept": "08-sleep-through",
+  "v": 6,
+  "template": "night",
+  "h1": "The last thing to lose sleep over is losing sleep gummies."
+ },
+ {
+  "name": "sleep-08-sleep-through-v07",
+  "line": "sleep",
+  "concept": "08-sleep-through",
+  "v": 7,
+  "template": "night",
+  "h1": "Some people will panic on Dec 11. You'll be asleep by ten."
+ },
+ {
+  "name": "sleep-08-sleep-through-v08",
+  "line": "sleep",
+  "concept": "08-sleep-through",
+  "v": 8,
+  "template": "night",
+  "h1": "Bad news for gummies. Good news if you stocked up."
+ },
+ {
+  "name": "sleep-08-sleep-through-v09",
+  "line": "sleep",
+  "concept": "08-sleep-through",
+  "v": 9,
+  "template": "night",
+  "h1": "Sleep is not cancelled. Supply is."
+ },
+ {
+  "name": "sleep-08-sleep-through-v10",
+  "line": "sleep",
+  "concept": "08-sleep-through",
+  "v": 10,
+  "template": "night",
+  "h1": "Rest easy through the ban. Because you planned ahead."
+ },
+ {
+  "name": "sleep-09-cupboard-v01",
+  "line": "sleep",
+  "concept": "09-cupboard",
+  "v": 1,
+  "template": "cupboard",
+  "h1": "Retailers get a deadline."
+ },
+ {
+  "name": "sleep-09-cupboard-v02",
+  "line": "sleep",
+  "concept": "09-cupboard",
+  "v": 2,
+  "template": "cupboard",
+  "h1": "Stores stop selling."
+ },
+ {
+  "name": "sleep-09-cupboard-v03",
+  "line": "sleep",
+  "concept": "09-cupboard",
+  "v": 3,
+  "template": "cupboard",
+  "h1": "What ships ends Dec 11."
+ },
+ {
+  "name": "sleep-09-cupboard-v04",
+  "line": "sleep",
+  "concept": "09-cupboard",
+  "v": 4,
+  "template": "cupboard",
+  "h1": "Congress closed the loophole."
+ },
+ {
+  "name": "sleep-09-cupboard-v05",
+  "line": "sleep",
+  "concept": "09-cupboard",
+  "v": 5,
+  "template": "cupboard",
+  "h1": "One bag runs out."
+ },
+ {
+  "name": "sleep-09-cupboard-v06",
+  "line": "sleep",
+  "concept": "09-cupboard",
+  "v": 6,
+  "template": "cupboard",
+  "h1": "Dec 11 is a shipping date."
+ },
+ {
+  "name": "sleep-09-cupboard-v07",
+  "line": "sleep",
+  "concept": "09-cupboard",
+  "v": 7,
+  "template": "cupboard",
+  "h1": "Meant to order."
+ },
+ {
+  "name": "sleep-09-cupboard-v08",
+  "line": "sleep",
+  "concept": "09-cupboard",
+  "v": 8,
+  "template": "cupboard",
+  "h1": "They lose the shelf."
+ },
+ {
+  "name": "sleep-09-cupboard-v09",
+  "line": "sleep",
+  "concept": "09-cupboard",
+  "v": 9,
+  "template": "cupboard",
+  "h1": "Every store shelf empties Dec 11."
+ },
+ {
+  "name": "sleep-09-cupboard-v10",
+  "line": "sleep",
+  "concept": "09-cupboard",
+  "v": 10,
+  "template": "cupboard",
+  "h1": "Buy before Dec 11."
+ },
+ {
+  "name": "sleep-10-countdown-v01",
+  "line": "sleep",
+  "concept": "10-countdown",
+  "v": 1,
+  "template": "count",
+  "h1": "89"
+ },
+ {
+  "name": "sleep-10-countdown-v02",
+  "line": "sleep",
+  "concept": "10-countdown",
+  "v": 2,
+  "template": "count",
+  "h1": "75"
+ },
+ {
+  "name": "sleep-10-countdown-v03",
+  "line": "sleep",
+  "concept": "10-countdown",
+  "v": 3,
+  "template": "count",
+  "h1": "60"
+ },
+ {
+  "name": "sleep-10-countdown-v04",
+  "line": "sleep",
+  "concept": "10-countdown",
+  "v": 4,
+  "template": "count",
+  "h1": "45"
+ },
+ {
+  "name": "sleep-10-countdown-v05",
+  "line": "sleep",
+  "concept": "10-countdown",
+  "v": 5,
+  "template": "count",
+  "h1": "30"
+ },
+ {
+  "name": "sleep-10-countdown-v06",
+  "line": "sleep",
+  "concept": "10-countdown",
+  "v": 6,
+  "template": "count",
+  "h1": "21"
+ },
+ {
+  "name": "sleep-10-countdown-v07",
+  "line": "sleep",
+  "concept": "10-countdown",
+  "v": 7,
+  "template": "count",
+  "h1": "14"
+ },
+ {
+  "name": "sleep-10-countdown-v08",
+  "line": "sleep",
+  "concept": "10-countdown",
+  "v": 8,
+  "template": "count",
+  "h1": "7"
+ },
+ {
+  "name": "sleep-10-countdown-v09",
+  "line": "sleep",
+  "concept": "10-countdown",
+  "v": 9,
+  "template": "count",
+  "h1": "3"
+ },
+ {
+  "name": "sleep-10-countdown-v10",
+  "line": "sleep",
+  "concept": "10-countdown",
+  "v": 10,
+  "template": "count",
+  "h1": "1"
+ },
+ {
+  "name": "thc-01-happy-hour-v01",
+  "line": "thc",
+  "concept": "01-happy-hour",
+  "v": 1,
+  "template": "neon",
+  "h1": "HAPPY HOUR"
+ },
+ {
+  "name": "thc-01-happy-hour-v02",
+  "line": "thc",
+  "concept": "01-happy-hour",
+  "v": 2,
+  "template": "neon",
+  "h1": "LAST ROUND"
+ },
+ {
+  "name": "thc-01-happy-hour-v03",
+  "line": "thc",
+  "concept": "01-happy-hour",
+  "v": 3,
+  "template": "neon",
+  "h1": "TAB'S OPEN"
+ },
+ {
+  "name": "thc-01-happy-hour-v04",
+  "line": "thc",
+  "concept": "01-happy-hour",
+  "v": 4,
+  "template": "neon",
+  "h1": "LAST CALL"
+ },
+ {
+  "name": "thc-01-happy-hour-v05",
+  "line": "thc",
+  "concept": "01-happy-hour",
+  "v": 5,
+  "template": "neon",
+  "h1": "EAT UP"
+ },
+ {
+  "name": "thc-01-happy-hour-v06",
+  "line": "thc",
+  "concept": "01-happy-hour",
+  "v": 6,
+  "template": "neon",
+  "h1": "BAR CLOSES"
+ },
+ {
+  "name": "thc-01-happy-hour-v07",
+  "line": "thc",
+  "concept": "01-happy-hour",
+  "v": 7,
+  "template": "neon",
+  "h1": "LAST ORDERS"
+ },
+ {
+  "name": "thc-01-happy-hour-v08",
+  "line": "thc",
+  "concept": "01-happy-hour",
+  "v": 8,
+  "template": "neon",
+  "h1": "NO AFTER-PARTY"
+ },
+ {
+  "name": "thc-01-happy-hour-v09",
+  "line": "thc",
+  "concept": "01-happy-hour",
+  "v": 9,
+  "template": "neon",
+  "h1": "HAPPY HOUR"
+ },
+ {
+  "name": "thc-01-happy-hour-v10",
+  "line": "thc",
+  "concept": "01-happy-hour",
+  "v": 10,
+  "template": "neon",
+  "h1": "CLOSING TIME"
+ },
+ {
+  "name": "thc-02-prohibition-v01",
+  "line": "thc",
+  "concept": "02-prohibition",
+  "v": 1,
+  "template": "poster",
+  "h1": "THC Gummies"
+ },
+ {
+  "name": "thc-02-prohibition-v02",
+  "line": "thc",
+  "concept": "02-prohibition",
+  "v": 2,
+  "template": "poster",
+  "h1": "THC Gummies"
+ },
+ {
+  "name": "thc-02-prohibition-v03",
+  "line": "thc",
+  "concept": "02-prohibition",
+  "v": 3,
+  "template": "poster",
+  "h1": "THC Gummies"
+ },
+ {
+  "name": "thc-02-prohibition-v04",
+  "line": "thc",
+  "concept": "02-prohibition",
+  "v": 4,
+  "template": "poster",
+  "h1": "Gummies"
+ },
+ {
+  "name": "thc-02-prohibition-v05",
+  "line": "thc",
+  "concept": "02-prohibition",
+  "v": 5,
+  "template": "poster",
+  "h1": "THC Gummies"
+ },
+ {
+  "name": "thc-02-prohibition-v06",
+  "line": "thc",
+  "concept": "02-prohibition",
+  "v": 6,
+  "template": "poster",
+  "h1": "Water- melon"
+ },
+ {
+  "name": "thc-02-prohibition-v07",
+  "line": "thc",
+  "concept": "02-prohibition",
+  "v": 7,
+  "template": "poster",
+  "h1": "THC Gummies"
+ },
+ {
+  "name": "thc-02-prohibition-v08",
+  "line": "thc",
+  "concept": "02-prohibition",
+  "v": 8,
+  "template": "poster",
+  "h1": "THC Gummies"
+ },
+ {
+  "name": "thc-02-prohibition-v09",
+  "line": "thc",
+  "concept": "02-prohibition",
+  "v": 9,
+  "template": "poster",
+  "h1": "Blue Raspberry"
+ },
+ {
+  "name": "thc-02-prohibition-v10",
+  "line": "thc",
+  "concept": "02-prohibition",
+  "v": 10,
+  "template": "poster",
+  "h1": "10mg Gummies"
+ },
+ {
+  "name": "thc-03-gummy-run-v01",
+  "line": "thc",
+  "concept": "03-gummy-run",
+  "v": 1,
+  "template": "shelf",
+  "h1": "Remember toilet paper, 2020? This is that."
+ },
+ {
+  "name": "thc-03-gummy-run-v02",
+  "line": "thc",
+  "concept": "03-gummy-run",
+  "v": 2,
+  "template": "shelf",
+  "h1": "The shelves clear before the deadline, not on it."
+ },
+ {
+  "name": "thc-03-gummy-run-v03",
+  "line": "thc",
+  "concept": "03-gummy-run",
+  "v": 3,
+  "template": "shelf",
+  "h1": "Everyone thinks they'll wait. Nobody waits."
+ },
+ {
+  "name": "thc-03-gummy-run-v04",
+  "line": "thc",
+  "concept": "03-gummy-run",
+  "v": 4,
+  "template": "shelf",
+  "h1": "First the fast movers. Then the flavors. Then nothing."
+ },
+ {
+  "name": "thc-03-gummy-run-v05",
+  "line": "thc",
+  "concept": "03-gummy-run",
+  "v": 5,
+  "template": "shelf",
+  "h1": "Panic buying is silly. Planned buying is smart."
+ },
+ {
+  "name": "thc-03-gummy-run-v06",
+  "line": "thc",
+  "concept": "03-gummy-run",
+  "v": 6,
+  "template": "shelf",
+  "h1": "200mg a bag. Zero after Dec 11."
+ },
+ {
+  "name": "thc-03-gummy-run-v07",
+  "line": "thc",
+  "concept": "03-gummy-run",
+  "v": 7,
+  "template": "shelf",
+  "h1": "This shelf is a countdown."
+ },
+ {
+  "name": "thc-03-gummy-run-v08",
+  "line": "thc",
+  "concept": "03-gummy-run",
+  "v": 8,
+  "template": "shelf",
+  "h1": "Buy before the run. Not during it."
+ },
+ {
+  "name": "thc-03-gummy-run-v09",
+  "line": "thc",
+  "concept": "03-gummy-run",
+  "v": 9,
+  "template": "shelf",
+  "h1": "The last legal restock is happening now."
+ },
+ {
+  "name": "thc-03-gummy-run-v10",
+  "line": "thc",
+  "concept": "03-gummy-run",
+  "v": 10,
+  "template": "shelf",
+  "h1": "When it's gone, it's federally gone."
+ },
+ {
+  "name": "thc-04-weekend-math-v01",
+  "line": "thc",
+  "concept": "04-weekend-math",
+  "v": 1,
+  "template": "compare",
+  "h1": "13 weekends until Dec 11. 20 gummies per bag. Do the math."
+ },
+ {
+  "name": "thc-04-weekend-math-v02",
+  "line": "thc",
+  "concept": "04-weekend-math",
+  "v": 2,
+  "template": "compare",
+  "h1": "Every Friday until the cap is one you can still buy for. Count them."
+ },
+ {
+  "name": "thc-04-weekend-math-v03",
+  "line": "thc",
+  "concept": "04-weekend-math",
+  "v": 3,
+  "template": "compare",
+  "h1": "Weekends left: 13. Bags you'll want: more than one."
+ },
+ {
+  "name": "thc-04-weekend-math-v04",
+  "line": "thc",
+  "concept": "04-weekend-math",
+  "v": 4,
+  "template": "compare",
+  "h1": "One bag is 10 weekends at two a night. The cap is 13 out. You see the problem."
+ },
+ {
+  "name": "thc-04-weekend-math-v05",
+  "line": "thc",
+  "concept": "04-weekend-math",
+  "v": 5,
+  "template": "compare",
+  "h1": "Football season runs past Dec 11. Your gummies don't."
+ },
+ {
+  "name": "thc-04-weekend-math-v06",
+  "line": "thc",
+  "concept": "04-weekend-math",
+  "v": 6,
+  "template": "compare",
+  "h1": "Halloween. Thanksgiving. Office party. All before the cap. Stock for all three."
+ },
+ {
+  "name": "thc-04-weekend-math-v07",
+  "line": "thc",
+  "concept": "04-weekend-math",
+  "v": 7,
+  "template": "compare",
+  "h1": "89 days. 20 per bag. 4 bags in the bundle. Math's done."
+ },
+ {
+  "name": "thc-04-weekend-math-v08",
+  "line": "thc",
+  "concept": "04-weekend-math",
+  "v": 8,
+  "template": "compare",
+  "h1": "New Year's Eve is 20 days after the cap. Buy for it now, or don't have it."
+ },
+ {
+  "name": "thc-04-weekend-math-v09",
+  "line": "thc",
+  "concept": "04-weekend-math",
+  "v": 9,
+  "template": "compare",
+  "h1": "10mg × 20 = 200mg a bag. New legal max: 0.4mg. This is the last real bag."
+ },
+ {
+  "name": "thc-04-weekend-math-v10",
+  "line": "thc",
+  "concept": "04-weekend-math",
+  "v": 10,
+  "template": "compare",
+  "h1": "Congress did the math: 0.4mg per bag. Your math: how many until spring."
+ },
+ {
+  "name": "thc-05-pick-a-side-v01",
+  "line": "thc",
+  "concept": "05-pick-a-side",
+  "v": 1,
+  "template": "calendar",
+  "h1": "Watermelon or Blue Raspberry?"
+ },
+ {
+  "name": "thc-05-pick-a-side-v02",
+  "line": "thc",
+  "concept": "05-pick-a-side",
+  "v": 2,
+  "template": "calendar",
+  "h1": "Two flavors. One deadline."
+ },
+ {
+  "name": "thc-05-pick-a-side-v03",
+  "line": "thc",
+  "concept": "05-pick-a-side",
+  "v": 3,
+  "template": "calendar",
+  "h1": "The great flavor debate ends December 11."
+ },
+ {
+  "name": "thc-05-pick-a-side-v04",
+  "line": "thc",
+  "concept": "05-pick-a-side",
+  "v": 4,
+  "template": "calendar",
+  "h1": "Team Watermelon. Team Blue Razz."
+ },
+ {
+  "name": "thc-05-pick-a-side-v05",
+  "line": "thc",
+  "concept": "05-pick-a-side",
+  "v": 5,
+  "template": "calendar",
+  "h1": "Can't decide?"
+ },
+ {
+  "name": "thc-05-pick-a-side-v06",
+  "line": "thc",
+  "concept": "05-pick-a-side",
+  "v": 6,
+  "template": "calendar",
+  "h1": "Pick your last flavor."
+ },
+ {
+  "name": "thc-05-pick-a-side-v07",
+  "line": "thc",
+  "concept": "05-pick-a-side",
+  "v": 7,
+  "template": "calendar",
+  "h1": "There's no wrong answer."
+ },
+ {
+  "name": "thc-05-pick-a-side-v08",
+  "line": "thc",
+  "concept": "05-pick-a-side",
+  "v": 8,
+  "template": "calendar",
+  "h1": "The rivalry ends Dec 11."
+ },
+ {
+  "name": "thc-05-pick-a-side-v09",
+  "line": "thc",
+  "concept": "05-pick-a-side",
+  "v": 9,
+  "template": "calendar",
+  "h1": "Voting closes December 11."
+ },
+ {
+  "name": "thc-05-pick-a-side-v10",
+  "line": "thc",
+  "concept": "05-pick-a-side",
+  "v": 10,
+  "template": "calendar",
+  "h1": "Two bags in. One deadline out."
+ },
+ {
+  "name": "thc-06-dear-january-v01",
+  "line": "thc",
+  "concept": "06-dear-january",
+  "v": 1,
+  "template": "note",
+  "h1": "Dear January-me, You're welcome."
+ },
+ {
+  "name": "thc-06-dear-january-v02",
+  "line": "thc",
+  "concept": "06-dear-january",
+  "v": 2,
+  "template": "note",
+  "h1": "Dear future me, Remember when THC gummies were legal to buy? Yeah. Ordered extra."
+ },
+ {
+  "name": "thc-06-dear-january-v03",
+  "line": "thc",
+  "concept": "06-dear-january",
+  "v": 3,
+  "template": "note",
+  "h1": "Dear September-me, Why didn't you order more before December 11?"
+ },
+ {
+  "name": "thc-06-dear-january-v04",
+  "line": "thc",
+  "concept": "06-dear-january",
+  "v": 4,
+  "template": "note",
+  "h1": "Note to self: Today the cap hit. The cupboard's full. Crisis averted."
+ },
+ {
+  "name": "thc-06-dear-january-v05",
+  "line": "thc",
+  "concept": "06-dear-january",
+  "v": 5,
+  "template": "note",
+  "h1": "Reminder: Buy before Dec 11. Not \"soon.\" Before."
+ },
+ {
+  "name": "thc-06-dear-january-v06",
+  "line": "thc",
+  "concept": "06-dear-january",
+  "v": 6,
+  "template": "note",
+  "h1": "Grocery list: eggs, milk, 89 days of gummies."
+ },
+ {
+  "name": "thc-06-dear-january-v07",
+  "line": "thc",
+  "concept": "06-dear-january",
+  "v": 7,
+  "template": "note",
+  "h1": "Dear everyone who waited: told you."
+ },
+ {
+  "name": "thc-06-dear-january-v08",
+  "line": "thc",
+  "concept": "06-dear-january",
+  "v": 8,
+  "template": "note",
+  "h1": "Dear me, You will not \"get to it.\" Get to it."
+ },
+ {
+  "name": "thc-06-dear-january-v09",
+  "line": "thc",
+  "concept": "06-dear-january",
+  "v": 9,
+  "template": "note",
+  "h1": "Dear cupboard, You're about to be the only store in town."
+ },
+ {
+  "name": "thc-06-dear-january-v10",
+  "line": "thc",
+  "concept": "06-dear-january",
+  "v": 10,
+  "template": "note",
+  "h1": "Dear regret, Not this time. Ordered before Dec 11."
+ },
+ {
+  "name": "thc-07-be-the-friend-v01",
+  "line": "thc",
+  "concept": "07-be-the-friend",
+  "v": 1,
+  "template": "night",
+  "h1": "Be the friend who still has some in February."
+ },
+ {
+  "name": "thc-07-be-the-friend-v02",
+  "line": "thc",
+  "concept": "07-be-the-friend",
+  "v": 2,
+  "template": "night",
+  "h1": "Everyone's going to ask you. Have an answer."
+ },
+ {
+  "name": "thc-07-be-the-friend-v03",
+  "line": "thc",
+  "concept": "07-be-the-friend",
+  "v": 3,
+  "template": "night",
+  "h1": "The group chat, Dec 12: \"anyone still have gummies?\""
+ },
+ {
+  "name": "thc-07-be-the-friend-v04",
+  "line": "thc",
+  "concept": "07-be-the-friend",
+  "v": 4,
+  "template": "night",
+  "h1": "Generosity is easy when you planned ahead."
+ },
+ {
+  "name": "thc-07-be-the-friend-v05",
+  "line": "thc",
+  "concept": "07-be-the-friend",
+  "v": 5,
+  "template": "night",
+  "h1": "Your friends will remember who stocked up."
+ },
+ {
+  "name": "thc-07-be-the-friend-v06",
+  "line": "thc",
+  "concept": "07-be-the-friend",
+  "v": 6,
+  "template": "night",
+  "h1": "Host gift of the year: a bag that's federally rare."
+ },
+ {
+  "name": "thc-07-be-the-friend-v07",
+  "line": "thc",
+  "concept": "07-be-the-friend",
+  "v": 7,
+  "template": "night",
+  "h1": "Some people hoard. Some people share."
+ },
+ {
+  "name": "thc-07-be-the-friend-v08",
+  "line": "thc",
+  "concept": "07-be-the-friend",
+  "v": 8,
+  "template": "night",
+  "h1": "\"Where'd you get these?\" \"September.\""
+ },
+ {
+  "name": "thc-07-be-the-friend-v09",
+  "line": "thc",
+  "concept": "07-be-the-friend",
+  "v": 9,
+  "template": "night",
+  "h1": "The friend with the gummies is the friend with the plan."
+ },
+ {
+  "name": "thc-07-be-the-friend-v10",
+  "line": "thc",
+  "concept": "07-be-the-friend",
+  "v": 10,
+  "template": "night",
+  "h1": "Popularity is a supply chain. Manage it."
+ },
+ {
+  "name": "thc-08-stores-stop-v01",
+  "line": "thc",
+  "concept": "08-stores-stop",
+  "v": 1,
+  "template": "cupboard",
+  "h1": "Shelves empty Dec 11."
+ },
+ {
+  "name": "thc-08-stores-stop-v02",
+  "line": "thc",
+  "concept": "08-stores-stop",
+  "v": 2,
+  "template": "cupboard",
+  "h1": "Their stock goes."
+ },
+ {
+  "name": "thc-08-stores-stop-v03",
+  "line": "thc",
+  "concept": "08-stores-stop",
+  "v": 3,
+  "template": "cupboard",
+  "h1": "Selling ends Dec 11."
+ },
+ {
+  "name": "thc-08-stores-stop-v04",
+  "line": "thc",
+  "concept": "08-stores-stop",
+  "v": 4,
+  "template": "cupboard",
+  "h1": "Order now."
+ },
+ {
+  "name": "thc-08-stores-stop-v05",
+  "line": "thc",
+  "concept": "08-stores-stop",
+  "v": 5,
+  "template": "cupboard",
+  "h1": "Last restock: Dec 11."
+ },
+ {
+  "name": "thc-08-stores-stop-v06",
+  "line": "thc",
+  "concept": "08-stores-stop",
+  "v": 6,
+  "template": "cupboard",
+  "h1": "They lose the aisle."
+ },
+ {
+  "name": "thc-08-stores-stop-v07",
+  "line": "thc",
+  "concept": "08-stores-stop",
+  "v": 7,
+  "template": "cupboard",
+  "h1": "Not an expiry."
+ },
+ {
+  "name": "thc-08-stores-stop-v08",
+  "line": "thc",
+  "concept": "08-stores-stop",
+  "v": 8,
+  "template": "cupboard",
+  "h1": "Shelves: capped."
+ },
+ {
+  "name": "thc-08-stores-stop-v09",
+  "line": "thc",
+  "concept": "08-stores-stop",
+  "v": 9,
+  "template": "cupboard",
+  "h1": "Buy before Dec 11."
+ },
+ {
+  "name": "thc-08-stores-stop-v10",
+  "line": "thc",
+  "concept": "08-stores-stop",
+  "v": 10,
+  "template": "cupboard",
+  "h1": "You get a choice."
+ },
+ {
+  "name": "thc-09-last-harvest-v01",
+  "line": "thc",
+  "concept": "09-last-harvest",
+  "v": 1,
+  "template": "doc",
+  "h1": "The Last Legal Harvest"
+ },
+ {
+  "name": "thc-09-last-harvest-v02",
+  "line": "thc",
+  "concept": "09-last-harvest",
+  "v": 2,
+  "template": "doc",
+  "h1": "Watermelon, Final Cut"
+ },
+ {
+  "name": "thc-09-last-harvest-v03",
+  "line": "thc",
+  "concept": "09-last-harvest",
+  "v": 3,
+  "template": "doc",
+  "h1": "Blue Raspberry, Last Run"
+ },
+ {
+  "name": "thc-09-last-harvest-v04",
+  "line": "thc",
+  "concept": "09-last-harvest",
+  "v": 4,
+  "template": "doc",
+  "h1": "The 200mg Bag"
+ },
+ {
+  "name": "thc-09-last-harvest-v05",
+  "line": "thc",
+  "concept": "09-last-harvest",
+  "v": 5,
+  "template": "doc",
+  "h1": "Field Notes: Dec 11"
+ },
+ {
+  "name": "thc-09-last-harvest-v06",
+  "line": "thc",
+  "concept": "09-last-harvest",
+  "v": 6,
+  "template": "doc",
+  "h1": "Last Yield"
+ },
+ {
+  "name": "thc-09-last-harvest-v07",
+  "line": "thc",
+  "concept": "09-last-harvest",
+  "v": 7,
+  "template": "doc",
+  "h1": "The Final Crop"
+ },
+ {
+  "name": "thc-09-last-harvest-v08",
+  "line": "thc",
+  "concept": "09-last-harvest",
+  "v": 8,
+  "template": "doc",
+  "h1": "Season 8, Episode Last"
+ },
+ {
+  "name": "thc-09-last-harvest-v09",
+  "line": "thc",
+  "concept": "09-last-harvest",
+  "v": 9,
+  "template": "doc",
+  "h1": "Supply Chain: Terminal"
+ },
+ {
+  "name": "thc-09-last-harvest-v10",
+  "line": "thc",
+  "concept": "09-last-harvest",
+  "v": 10,
+  "template": "doc",
+  "h1": "The Last Legal Harvest"
+ },
+ {
+  "name": "thc-10-countdown-v01",
+  "line": "thc",
+  "concept": "10-countdown",
+  "v": 1,
+  "template": "count",
+  "h1": "89"
+ },
+ {
+  "name": "thc-10-countdown-v02",
+  "line": "thc",
+  "concept": "10-countdown",
+  "v": 2,
+  "template": "count",
+  "h1": "75"
+ },
+ {
+  "name": "thc-10-countdown-v03",
+  "line": "thc",
+  "concept": "10-countdown",
+  "v": 3,
+  "template": "count",
+  "h1": "60"
+ },
+ {
+  "name": "thc-10-countdown-v04",
+  "line": "thc",
+  "concept": "10-countdown",
+  "v": 4,
+  "template": "count",
+  "h1": "45"
+ },
+ {
+  "name": "thc-10-countdown-v05",
+  "line": "thc",
+  "concept": "10-countdown",
+  "v": 5,
+  "template": "count",
+  "h1": "30"
+ },
+ {
+  "name": "thc-10-countdown-v06",
+  "line": "thc",
+  "concept": "10-countdown",
+  "v": 6,
+  "template": "count",
+  "h1": "21"
+ },
+ {
+  "name": "thc-10-countdown-v07",
+  "line": "thc",
+  "concept": "10-countdown",
+  "v": 7,
+  "template": "count",
+  "h1": "14"
+ },
+ {
+  "name": "thc-10-countdown-v08",
+  "line": "thc",
+  "concept": "10-countdown",
+  "v": 8,
+  "template": "count",
+  "h1": "7"
+ },
+ {
+  "name": "thc-10-countdown-v09",
+  "line": "thc",
+  "concept": "10-countdown",
+  "v": 9,
+  "template": "count",
+  "h1": "3"
+ },
+ {
+  "name": "thc-10-countdown-v10",
+  "line": "thc",
+  "concept": "10-countdown",
+  "v": 10,
+  "template": "count",
+  "h1": "1"
+ }
+]

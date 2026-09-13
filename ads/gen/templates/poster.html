@@ -1,0 +1,34 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../ad.css">
+<style>
+:root{--bg:#0e0d0b;--ink:#efe6cf;--hi:#c9973f;--alert:#d6281f}
+.ad{background:var(--bg);color:var(--ink)}
+.ad::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse 60% 40% at 50% 8%,rgba(255,220,120,.14),transparent 70%),
+             repeating-linear-gradient(90deg,rgba(255,255,255,.025) 0 1px,transparent 1px 6px)}
+.frame{position:absolute;inset:34px;border:3px solid var(--ink);border-radius:6px}
+.frame::after{content:"";position:absolute;inset:8px;border:1px solid color-mix(in srgb,var(--ink) 40%,transparent);border-radius:3px}
+.pre{position:absolute;left:0;right:0;top:72px;text-align:center;font:700 22px/1 Inter;letter-spacing:.42em;text-transform:uppercase;color:var(--hi)}
+.band{position:absolute;left:0;right:0;top:108px;text-align:center;font:400 {{BANDSIZE}}px/.92 Anton;letter-spacing:.005em;text-transform:uppercase}
+.tour{position:absolute;left:0;right:0;top:395px;text-align:center;font:900 italic 64px/1 Playfair;color:var(--hi)}
+.dates{position:absolute;left:100px;top:490px;width:560px;font:700 30px/1.9 Courier;letter-spacing:.06em;text-transform:uppercase}
+.dates div{display:flex;justify-content:space-between;border-bottom:1px dashed color-mix(in srgb,var(--ink) 30%,transparent)}
+.dates .out{color:color-mix(in srgb,var(--ink) 45%,transparent)}
+.dates .final{color:#fff}
+.dates .final b{color:var(--alert)}
+.enc{position:absolute;left:100px;top:775px;font:400 46px/1 Bebas;letter-spacing:.12em;color:var(--alert)}
+.bag{position:absolute;right:36px;top:585px;width:320px;transform:rotate(6deg);filter:drop-shadow(0 30px 40px rgba(0,0,0,.8))}
+.bag.tall{right:60px;top:440px;width:210px}
+.cta{left:100px;bottom:96px}
+.legal{bottom:38px;left:34px;right:34px}
+{{CSS}}
+</style></head><body><div class="ad">
+<div class="frame"></div>
+<div class="pre">{{PRE}}</div>
+<div class="band">{{BAND}}</div>
+<div class="tour">{{TOUR}}</div>
+<div class="dates">{{DATES}}</div>
+<div class="enc">{{ENC}}</div>
+<img class="bag {{IMGCLASS}}" src="{{IMG}}">
+<a class="cta cta--white">{{CTA}} <span>{{CTA2}}</span></a>
+<div class="legal legal--dark"><span class="age">21+</span><span>Hemp-derived THC · purekana.com</span></div>
+</div></body></html>
