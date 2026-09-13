@@ -1,0 +1,37 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="ad.css">
+<style>
+.ad{background:#0e0d0b;color:#efe6cf}
+.ad::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse 60% 40% at 50% 8%,rgba(255,220,120,.14),transparent 70%),
+             repeating-linear-gradient(90deg,rgba(255,255,255,.025) 0 1px,transparent 1px 6px)}
+.frame{position:absolute;inset:34px;border:3px solid #efe6cf;border-radius:6px}
+.frame::after{content:"";position:absolute;inset:8px;border:1px solid rgba(239,230,207,.4);border-radius:3px}
+.pre{position:absolute;left:0;right:0;top:72px;text-align:center;font:700 22px/1 Inter;letter-spacing:.42em;text-transform:uppercase;color:#c9973f}
+.band{position:absolute;left:0;right:0;top:108px;text-align:center;font:400 150px/.92 Anton;letter-spacing:.005em;text-transform:uppercase}
+.tour{position:absolute;left:0;right:0;top:395px;text-align:center;font:900 italic 64px/1 Playfair;color:#c9973f}
+.dates{position:absolute;left:100px;top:490px;width:560px;font:700 30px/1.9 Courier;letter-spacing:.06em;text-transform:uppercase}
+.dates div{display:flex;justify-content:space-between;border-bottom:1px dashed rgba(239,230,207,.3);position:relative}
+.dates .out{color:rgba(239,230,207,.45)}
+.stamp{position:absolute;right:-6px;top:6px;padding:2px 10px;border:3px solid #d6281f;color:#d6281f;border-radius:4px;font:900 20px/1.2 Inter;letter-spacing:.14em;transform:rotate(-8deg);background:rgba(14,13,11,.7)}
+.dates .final{color:#fff}
+.dates .final b{color:#d6281f}
+.enc{position:absolute;left:100px;top:775px;font:400 46px/1 Bebas;letter-spacing:.12em;color:#d6281f}
+.bag{position:absolute;right:36px;top:585px;width:320px;transform:rotate(6deg);filter:drop-shadow(0 30px 40px rgba(0,0,0,.8))}
+.cta{left:100px;bottom:96px}
+.legal{bottom:38px;left:34px;right:34px}
+</style></head><body><div class="ad">
+<div class="frame"></div>
+<div class="pre">PureKana presents</div>
+<div class="band">THC Sleep<br>Gummies</div>
+<div class="tour">The Farewell Tour</div>
+<div class="dates">
+  <div class="out"><span>Sept 2026</span><span>Selling fast</span></div>
+  <div class="out"><span>Oct 2026</span><span>Selling fast</span></div>
+  <div class="out"><span>Nov 2026</span><span>Last legs</span></div>
+  <div class="final"><span>Dec 11</span><span><b>Final show</b></span></div>
+</div>
+<div class="enc">No encore.</div>
+<img class="bag" src="img/sleep-3bags.png">
+<a class="cta cta--white">Get tickets <span>→ last shows, from $26.21</span></a>
+<div class="legal legal--dark"><span class="age">21+</span><span>Hemp-derived THC · purekana.com</span></div>
+</div></body></html>

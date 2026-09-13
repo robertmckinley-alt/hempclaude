@@ -1,0 +1,35 @@
+@font-face{font-family:Bebas;src:url(fonts/bebas.woff2) format("woff2")}
+@font-face{font-family:Anton;src:url(fonts/anton.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:500;src:url(fonts/inter-500.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:700;src:url(fonts/inter-700.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:900;src:url(fonts/inter-900.woff2) format("woff2")}
+@font-face{font-family:Playfair;font-weight:700;src:url(fonts/playfair-700.woff2) format("woff2")}
+@font-face{font-family:Playfair;font-weight:900;font-style:italic;src:url(fonts/playfair-900i.woff2) format("woff2")}
+@font-face{font-family:Elite;src:url(fonts/special-elite.woff2) format("woff2")}
+@font-face{font-family:Courier;font-weight:700;src:url(fonts/courier-700.woff2) format("woff2")}
+
+*{box-sizing:border-box;margin:0}
+html,body{width:1080px;height:1080px;overflow:hidden}
+body{font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;position:relative}
+.ad{position:absolute;inset:0;width:1080px;height:1080px;overflow:hidden}
+img{display:block}
+
+/* CTA pill */
+.cta{position:absolute;display:inline-flex;align-items:center;gap:14px;padding:26px 44px;border-radius:999px;
+     font:700 34px/1 Inter;letter-spacing:-.01em;white-space:nowrap}
+.cta--gold{background:linear-gradient(180deg,#f0cf85,#c9973f);color:#2a1e08;box-shadow:0 12px 32px rgba(201,151,63,.45)}
+.cta--red{background:#d6281f;color:#fff;box-shadow:0 12px 32px rgba(214,40,31,.45)}
+.cta--ink{background:#10151c;color:#fff;box-shadow:0 12px 32px rgba(0,0,0,.35)}
+.cta--white{background:#fff;color:#10151c;box-shadow:0 12px 32px rgba(0,0,0,.3)}
+.cta span{font-size:30px}
+
+/* legal footer */
+.legal{position:absolute;left:0;right:0;bottom:0;padding:18px 40px;display:flex;justify-content:space-between;align-items:center;
+       font:500 17px/1.3 Inter;letter-spacing:.02em}
+.legal--dark{color:rgba(255,255,255,.55)}
+.legal--light{color:rgba(16,21,28,.55)}
+.age{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;
+     border:3px solid currentColor;font:900 20px/1 Inter;letter-spacing:-.02em}
+
+/* date chip */
+.date{position:absolute;display:inline-block;padding:14px 26px;border-radius:12px;font:700 26px/1 Inter;letter-spacing:.06em;text-transform:uppercase}

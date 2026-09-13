@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="ad.css">
+<style>
+.ad{background:#f6f3ec}
+.ad::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 28% 52%,rgba(255,120,90,.18),transparent 70%)}
+.h1{position:absolute;left:60px;right:60px;top:56px;font:900 52px/1.08 Inter;letter-spacing:-.035em;color:#10151c}
+.h1 em{font-style:normal;color:#d6281f}
+.panel{position:absolute;top:300px;bottom:225px;border-radius:24px;background:#fff;box-shadow:0 20px 50px rgba(16,21,28,.10);border:1px solid #e6e1d6}
+.panel.l{left:60px;width:560px}
+.panel.r{left:650px;right:60px}
+.lbl{position:absolute;top:26px;left:0;right:0;text-align:center;font:700 19px/1 Inter;letter-spacing:.16em;text-transform:uppercase;color:#7a7368}
+.big{position:absolute;bottom:34px;left:0;right:0;text-align:center;font:900 82px/1 Inter;letter-spacing:-.05em;color:#10151c}
+.big small{display:block;font:700 22px/1.4 Inter;letter-spacing:.02em;color:#7a7368;margin-top:8px}
+.gummy{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%) rotate(-12deg);width:330px;filter:drop-shadow(0 30px 40px rgba(180,40,20,.35))}
+.dot{position:absolute;left:50%;top:50%;width:7px;height:7px;border-radius:50%;background:#c43a2e;transform:translate(-50%,-50%);box-shadow:0 0 0 2px #fff,0 0 0 4px #c43a2e}
+.glass{position:absolute;left:50%;top:50%;width:170px;height:170px;border:6px solid #10151c;border-radius:50%;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(255,255,255,.9),rgba(255,255,255,.4))}
+.glass::after{content:"";position:absolute;width:26px;height:120px;background:#10151c;border-radius:14px;right:-58px;bottom:-96px;transform:rotate(-45deg)}
+.cta{left:50%;transform:translateX(-50%);bottom:100px}
+.legal{bottom:0}
+</style></head><body><div class="ad">
+<div class="h1">After Dec 11, a legal bag can hold <em>0.4mg</em> of THC. Yours has <em>100mg.</em><br>That's not a gummy. That's a rumor.</div>
+
+<div class="panel l">
+  <div class="lbl">Your gummy today</div>
+  <img class="gummy" src="img/gummy.png">
+  <div class="big">5mg<small>per gummy · 100mg per bag</small></div>
+</div>
+<div class="panel r">
+  <div class="lbl">Legal after Dec 11</div>
+  <div class="glass"><div class="dot"></div></div>
+  <div class="big">0.4mg<small>per <u>entire bag</u> · 250× less</small></div>
+</div>
+
+<a class="cta cta--red">Get the real thing while it's real <span>→</span></a>
+<div class="legal legal--light"><span class="age">21+</span><span>P.L. 119-37 §781 · Hemp-derived THC · purekana.com</span></div>
+</div></body></html>
