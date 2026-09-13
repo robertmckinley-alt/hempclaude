@@ -47,7 +47,7 @@ const concepts = [];
 
 // 01 Last Call ---------------------------------------------------------
 concepts.push({ line: 'sleep', id: '01-last-call', template: 'neon',
-  defaults: { H1SIZE: 250, CSS: ':root{--g1:#b13aff;--g2:#f0cf85;--t2:#f7e3a8}', IMGS: img(SH), CTA: 'Close out your tab', CTA2: '→ Buy 3, Get 1 Free' },
+  defaults: { H1SIZE: 250, CSS: ':root{--g1:#b13aff;--g2:#f0cf85;--t2:#f7e3a8}', IMGS: img(SH), CTA: 'Close out your tab', CTA2: '→' },
   variants: [
     { H1: 'LAST CALL', H2: 'FOR SLEEP GUMMIES', SUB: 'Congress flips the lights on <b>December 11.</b><br>What\'s in your cupboard by then is yours.' },
     { H1: 'LAST CALL', H2: 'LIGHTS OUT DEC 11', SUB: 'The federal THC cap hits <b>December 11.</b><br>After that, this bag doesn\'t get restocked.', IMGS: img(S3) },
@@ -79,7 +79,7 @@ concepts.push({ line: 'sleep', id: '02-endangered', template: 'doc',
 
 // 03 Gummy Prepper ------------------------------------------------------
 concepts.push({ line: 'sleep', id: '03-prepper', template: 'shelf',
-  defaults: { H1SIZE: 76, ROWCLASS: 'tall', ROW1: img(S3) + img(S3, 'margin-left:-90px'), ROW2: img(S3, 'margin-right:-90px') + img(S3), TAPE1: 'Supply: Oct', TAPE2: 'Supply: Nov', TAPE3: 'Cutoff: Dec 11', CTA: 'Build your supply', CTA2: '→ Buy 3, Get 1 Free' },
+  defaults: { H1SIZE: 76, ROWCLASS: 'tall', ROW1: img(S3) + img(S3, 'margin-left:-90px'), ROW2: img(S3, 'margin-right:-90px') + img(S3), TAPE1: 'Supply: Oct', TAPE2: 'Supply: Nov', TAPE3: 'Cutoff: Dec 11', CTA: 'Build your supply', CTA2: '→' },
   variants: [
     { H1: 'Some people stockpile <s>beans.</s><br>Smart people stockpile <b>sleep.</b>' },
     { H1: 'Bunker rule #1:<br><b>never</b> run out of sleep.', TAPE1: 'Shelf A', TAPE2: 'Shelf B', TAPE3: 'Cap: Dec 11' },
@@ -90,7 +90,7 @@ concepts.push({ line: 'sleep', id: '03-prepper', template: 'shelf',
     { H1: 'Stack them now.<br><b>Sleep on it later.</b>', CTA: 'Stack the shelf' },
     { H1: 'Your winter sleep supply<br>ships until <b>Dec 11.</b>', TAPE1: 'Dec', TAPE2: 'Jan', TAPE3: 'No Feb restock' },
     { H1: 'Prepping for the apocalypse?<br><b>Start with bedtime.</b>', TAPE1: 'Priority 1', TAPE2: 'Priority 2' },
-    { H1: 'Bulk buy. Deep sleep.<br><b>No regrets in January.</b>', TAPE1: 'Bought', TAPE2: 'Sorted', CTA: 'Buy the 4-pack' },
+    { H1: 'Bulk buy. Deep sleep.<br><b>No regrets in January.</b>', TAPE1: 'Bought', TAPE2: 'Sorted', CTA: 'Buy in bulk' },
   ]});
 
 // 04 The 0.4mg Rumor ----------------------------------------------------
@@ -138,12 +138,12 @@ concepts.push({ line: 'sleep', id: '06-thanksgiving', template: 'calendar',
     { H1: '15 days between the in-laws<br>and the federal cap.', PLAN: 'Use them.', C2: CAL_DEC('Last ship date.<br>15 days later.') },
     { H1: 'Black Friday is the 27th.<br>The real deadline is the 11th.', PLAN: 'Shop the one that matters.', C1: CAL_NOV('Thanksgiving.<br>Then the doorbusters.'), CTA: 'Shop the real deadline' },
     { H1: '"So, what are you doing<br>with your life?"', PLAN: 'Sleep. That\'s the plan.', H1SIZE: 62, C1: CAL_NOV('That question.<br>Every year.'), C2: CAL_DEC('No more sleep gummies.<br>Rough month.') },
-    { H1: 'Thanksgiving. Office party.<br>Then the cap.', PLAN: 'Three reasons. One 4-pack.', C2: CAL_DEC('Federal THC cap.<br>Buy 3, get 1 free before it.'), CTA: 'Get the 4-pack' },
+    { H1: 'Thanksgiving. Office party.<br>Then the cap.', PLAN: 'Three reasons to stock up.', C2: CAL_DEC('Federal THC cap.<br>Order before it.'), CTA: 'Stock up for all three' },
   ]});
 
 // 07 Farewell Tour ------------------------------------------------------
 concepts.push({ line: 'sleep', id: '07-farewell-tour', template: 'poster',
-  defaults: { BANDSIZE: 150, DATES: TOUR_DATES, IMG: S3, IMGCLASS: '', CTA: 'Get tickets', CTA2: '→ last shows, from $26.21' },
+  defaults: { BANDSIZE: 150, DATES: TOUR_DATES, IMG: S3, IMGCLASS: '', CTA: 'Get tickets', CTA2: '→' },
   variants: [
     { PRE: 'PureKana presents', BAND: 'THC Sleep<br>Gummies', TOUR: 'The Farewell Tour', ENC: 'No encore.' },
     { PRE: 'Final run', BAND: 'THC Sleep<br>Gummies', TOUR: 'Last Shows: Dec 11', ENC: 'Get your tickets.', IMG: SH, IMGCLASS: 'tall' },
@@ -168,24 +168,24 @@ concepts.push({ line: 'sleep', id: '08-sleep-through', template: 'night',
     { H1: 'Hit snooze on the ban.<br><em>Literally.</em>', SUB: 'What you own by <b>December 11</b> stays yours. Order the winter now.', H1SIZE: 78, H2TOP: 330 },
     { H1: 'The last thing to lose sleep over<br><em>is losing sleep gummies.</em>', SUB: 'Order before <b>December 11</b> and don\'t.', H1SIZE: 62, H2TOP: 360, IMG: S3, IMGCLASS: 'wide', Z: 'off' },
     { H1: 'Some people will panic on Dec 11.<br><em>You\'ll be asleep by ten.</em>', SUB: 'Because you ordered in time.', H1SIZE: 62, H2TOP: 360 },
-    { H1: 'Bad news for gummies.<br><em>Good news if you stocked up.</em>', SUB: '<b>December 11</b> cutoff. Buy 3, get 1 free until then.', H1SIZE: 64, H2TOP: 360, IMG: S3, IMGCLASS: 'wide', Z: 'off', CTA: 'Stock up' },
+    { H1: 'Bad news for gummies.<br><em>Good news if you stocked up.</em>', SUB: '<b>December 11</b> cutoff. Order before then.', H1SIZE: 64, H2TOP: 360, IMG: S3, IMGCLASS: 'wide', Z: 'off', CTA: 'Stock up' },
     { H1: 'Sleep is not cancelled.<br><em>Supply is.</em>', SUB: '<b>December 11.</b> Fill the drawer.', H1SIZE: 78, H2TOP: 330, CTA: 'Fill the drawer' },
     { H1: 'Rest easy through the ban.<br><em>Because you planned ahead.</em>', SUB: 'Ships until <b>December 11.</b>', H1SIZE: 64, H2TOP: 360, IMG: S3, IMGCLASS: 'wide', Z: 'off' },
   ]});
 
 // 09 No Grandfather Clause ---------------------------------------------
 concepts.push({ line: 'sleep', id: '09-cupboard', template: 'cupboard',
-  defaults: { H1SIZE: 76, IMGS: CUP_SLEEP, CTA: 'Fill the cupboard', CTA2: '→ Buy 3, Get 1 Free' },
+  defaults: { H1SIZE: 76, IMGS: CUP_SLEEP, CTA: 'Fill the cupboard', CTA2: '→' },
   variants: [
     { KICKER: 'No grandfather clause for stores. One for you.', L1: 'Retailers get<br>a <span class="m">deadline.</span>', L2: 'You get<br>a <span class="r">cupboard.</span>', PAY: 'What\'s in it on December 11 stays yours.<br>What isn\'t, isn\'t.' },
     { KICKER: 'Read the fine print. Then read your pantry.', L1: 'Stores stop<br><span class="m">selling.</span>', L2: 'You don\'t stop<br><span class="r">having.</span>', PAY: 'The cap governs shelves, not homes.<br>Fill yours by Dec 11.' },
     { KICKER: 'The law says "sold." It doesn\'t say "owned."', L1: 'What ships<br><span class="m">ends Dec 11.</span>', L2: 'What\'s home<br><span class="r">stays home.</span>', PAY: 'Your supply is legal.<br>Your reorder isn\'t.' },
     { KICKER: 'The one loophole left is your kitchen.', L1: 'Congress closed<br>the <span class="m">loophole.</span>', L2: 'Not your<br><span class="r">cupboard.</span>', PAY: 'Order before Dec 11.<br>Keep it after.' },
-    { KICKER: 'Personal stock: allowed. Restock: not.', L1: 'One bag<br><span class="m">runs out.</span>', L2: 'Four bags<br><span class="r">run through.</span>', PAY: 'Buy for the winter before Dec 11.', CTA: 'Get four bags' },
+    { KICKER: 'Personal stock: allowed. Restock: not.', L1: 'One bag<br><span class="m">runs out.</span>', L2: 'Four bags<br><span class="r">run through.</span>', PAY: 'Buy for the winter before Dec 11.', CTA: 'Buy for the winter' },
     { KICKER: 'Stores get a cutoff. Your drawer doesn\'t.', L1: 'Dec 11 is a<br><span class="m">shipping date.</span>', L2: 'Not an<br><span class="r">expiry date.</span>', PAY: 'Order now.<br>Sleep on it for months.' },
     { KICKER: 'What you own is yours. What you meant to order isn\'t.', L1: 'Meant to<br><span class="m">order.</span>', L2: 'Actually<br><span class="r">ordered.</span>', PAY: 'Only one of these counts<br>on December 11.' },
     { KICKER: 'Deadlines are for retailers.', L1: 'They lose<br>the <span class="m">shelf.</span>', L2: 'You keep<br>the <span class="r">stash.</span>', PAY: 'Fill it by December 11.' },
-    { KICKER: 'The cupboard is the last legal shelf.', L1: 'Every store shelf<br><span class="m">empties Dec 11.</span>', L2: 'Yours<br><span class="r">doesn\'t have to.</span>', PAY: 'Buy 3, get 1 free.<br>Stack them.', H1SIZE: 68 },
+    { KICKER: 'The cupboard is the last legal shelf.', L1: 'Every store shelf<br><span class="m">empties Dec 11.</span>', L2: 'Yours<br><span class="r">doesn\'t have to.</span>', PAY: 'Order more than one.<br>Stack them.', H1SIZE: 68 },
     { KICKER: 'This is the whole strategy.', L1: 'Buy before<br><span class="m">Dec 11.</span>', L2: 'Own after<br><span class="r">Dec 11.</span>', PAY: 'There is no step three.' },
   ]});
 
@@ -213,7 +213,7 @@ const THC_NEON = ':root{--g1:#ff2d8a;--g2:#1fd1b0;--t2:#9ff5e3}';
 
 // 01 Happy Hour's Over --------------------------------------------------
 concepts.push({ line: 'thc', id: '01-happy-hour', template: 'neon',
-  defaults: { H1SIZE: 230, CSS: THC_NEON, IMGS: img(WM) + img(BR), CTA: 'Order the last round', CTA2: '→ Buy 3, Get 1 Free' },
+  defaults: { H1SIZE: 230, CSS: THC_NEON, IMGS: img(WM) + img(BR), CTA: 'Order the last round', CTA2: '→' },
   variants: [
     { H1: 'HAPPY HOUR', H2: 'IS ENDING', SUB: 'The federal happy hour closes <b>December 11.</b><br>Last round is on you.' },
     { H1: 'LAST ROUND', H2: 'DECEMBER 11', SUB: 'Watermelon or Blue Raspberry. Doesn\'t matter —<br>both stop shipping <b>December 11.</b>' },
@@ -229,7 +229,7 @@ concepts.push({ line: 'thc', id: '01-happy-hour', template: 'neon',
 
 // 02 Prohibition 2.0 ----------------------------------------------------
 concepts.push({ line: 'thc', id: '02-prohibition', template: 'poster',
-  defaults: { BANDSIZE: 150, DATES: PROHIB_DATES, IMG: WM, IMGCLASS: 'tall', CSS: ':root{--bg:#120f0a;--ink:#f1e6c8;--hi:#e0a83a}', CTA: 'Stock the cellar', CTA2: '→ Buy 3, Get 1 Free' },
+  defaults: { BANDSIZE: 150, DATES: PROHIB_DATES, IMG: WM, IMGCLASS: 'tall', CSS: ':root{--bg:#120f0a;--ink:#f1e6c8;--hi:#e0a83a}', CTA: 'Stock the cellar', CTA2: '→' },
   variants: [
     { PRE: 'Est. 2018 · Dry Dec 11, 2026', BAND: 'THC<br>Gummies', TOUR: 'Prohibition 2.0', ENC: 'Stock up like it\'s 1919.' },
     { PRE: 'Speakeasy hours: now', BAND: 'THC<br>Gummies', TOUR: 'Last Legal Batch', ENC: 'No password. Just a deadline.', IMG: BR },
@@ -239,7 +239,7 @@ concepts.push({ line: 'thc', id: '02-prohibition', template: 'poster',
     { PRE: 'Bootleg-free · legal today', BAND: 'Water-<br>melon', TOUR: 'The Last Open Bar', ENC: 'Order the case.', CTA: 'Order the case' },
     { PRE: 'The Roaring 2026', BAND: 'THC<br>Gummies', TOUR: 'The Great Dry-Up', ENC: 'Charleston optional.', IMG: BR },
     { PRE: 'Passed 370–48', BAND: 'THC<br>Gummies', TOUR: 'Prohibition 2.0', ENC: 'Congress isn\'t bluffing.' },
-    { PRE: 'Cellar strategy', BAND: 'Blue<br>Raspberry', TOUR: 'Stock the Speakeasy', ENC: 'Twenty a bag. Buy 3, get 1.', IMG: BR },
+    { PRE: 'Cellar strategy', BAND: 'Blue<br>Raspberry', TOUR: 'Stock the Speakeasy', ENC: 'Twenty a bag. Stock the shelf.', IMG: BR },
     { PRE: 'Final pour', BAND: '10mg<br>Gummies', TOUR: 'Dry After Dec 11', ENC: 'No bathtub gummies. Buy the real ones.' },
   ]});
 
@@ -247,7 +247,7 @@ concepts.push({ line: 'thc', id: '02-prohibition', template: 'poster',
 concepts.push({ line: 'thc', id: '03-gummy-run', template: 'shelf',
   defaults: { H1SIZE: 76, ROWCLASS: 'tall', CSS: ':root{--bg:#1c1f26;--ink:#eef0f4;--hi:#ff2d8a;--strike:#ff2d8a;--tape:#9ff5e3;--alert:#ff2d8a}',
     ROW1: img(WM) + img(BR) + img(WM) + img(BR) + img(WM), ROW2: img(BR) + img(WM) + img(BR) + img(WM) + img(BR),
-    TAPE1: 'Aisle 7', TAPE2: 'Aisle 8', TAPE3: 'Cutoff: Dec 11', CTA: 'Buy before the run', CTA2: '→ Buy 3, Get 1 Free' },
+    TAPE1: 'Aisle 7', TAPE2: 'Aisle 8', TAPE3: 'Cutoff: Dec 11', CTA: 'Buy before the run', CTA2: '→' },
   variants: [
     { H1: 'Remember toilet paper, 2020?<br><b>This is that.</b>' },
     { H1: 'The shelves clear<br><b>before</b> the deadline, not on it.', TAPE1: 'Going', TAPE2: 'Going' },
@@ -271,7 +271,7 @@ concepts.push({ line: 'thc', id: '04-weekend-math', template: 'compare',
     { H1: 'One bag is <em>10 weekends</em> at two a night. The cap is 13 out.<br>You see the problem.', P2: P2_BAG(BR) },
     { H1: 'Football season runs past Dec 11.<br><em>Your gummies don\'t.</em>', H1SIZE: 60 },
     { H1: 'Halloween. Thanksgiving. Office party.<br><em>All before the cap. Stock for all three.</em>', P2: P2_BAG(BR), H1SIZE: 50 },
-    { H1: '<em>89</em> days. <em>20</em> per bag. <em>4</em> bags in the bundle.<br>Math\'s done.', H1SIZE: 60, CTA: 'Get the bundle' },
+    { H1: '<em>89</em> days. <em>20</em> per bag.<br>How many bags is that? Math\'s done.', H1SIZE: 60, CTA: 'Order the winter' },
     { H1: 'New Year\'s Eve is 20 days after the cap.<br><em>Buy for it now, or don\'t have it.</em>', P2: P2_BAG(BR) },
     { H1: '10mg × 20 = 200mg a bag.<br>New legal max: <em>0.4mg.</em> This is the last real bag.', P1: P1_THCGUM, P2: P2_THCGLASS, CTA: 'Get the real thing while it\'s real' },
     { H1: 'Congress did the math: <em>0.4mg</em> per bag.<br>Your math: <em>how many until spring.</em>', P1: P1_THCGUM, P2: P2_THCGLASS, H1SIZE: 52 },
@@ -285,7 +285,7 @@ concepts.push({ line: 'thc', id: '05-pick-a-side', template: 'calendar',
     { H1: 'Two flavors. One deadline.', PLAN: 'Dec 11. Choose. Or buy both.' },
     { H1: 'The great flavor debate<br>ends December 11.', PLAN: 'Not with a winner. With a cap.' },
     { H1: 'Team Watermelon.<br>Team Blue Razz.', PLAN: 'Both benched Dec 11.' },
-    { H1: 'Can\'t decide?', PLAN: 'Buy 3, get 1 free. Now you don\'t have to.', H1SIZE: 80, CTA: 'Get both' },
+    { H1: 'Can\'t decide?', PLAN: 'Get both. Now you don\'t have to.', H1SIZE: 80, CTA: 'Get both' },
     { H1: 'Pick your last flavor.', PLAN: 'Then pick three more bags of it.', H1SIZE: 72 },
     { H1: 'There\'s no wrong answer.', PLAN: 'There is a wrong date. Dec 11.', H1SIZE: 72 },
     { H1: 'The rivalry ends Dec 11.', PLAN: 'Both sides lose. Unless you stocked up.', H1SIZE: 72 },
@@ -295,9 +295,9 @@ concepts.push({ line: 'thc', id: '05-pick-a-side', template: 'calendar',
 
 // 06 Dear January Me ----------------------------------------------------
 concepts.push({ line: 'thc', id: '06-dear-january', template: 'note',
-  defaults: { H1SIZE: 60, IMG: WM, IMGW: 260, CTA: 'Write your future self a favour', CTA2: '→ Buy 3, Get 1 Free' },
+  defaults: { H1SIZE: 60, IMG: WM, IMGW: 260, CTA: 'Write your future self a favour', CTA2: '→' },
   variants: [
-    { DATE: 'December 10, 2026', H1: 'Dear January-me,<br><br>You\'re welcome.', SIG: '— December-me<br>P.S. I ordered the 4-pack.', STAMP: 'Delivered' },
+    { DATE: 'December 10, 2026', H1: 'Dear January-me,<br><br>You\'re welcome.', SIG: '— December-me<br>P.S. I ordered extra.', STAMP: 'Delivered' },
     { DATE: 'September 2026', H1: 'Dear future me,<br><br>Remember when THC gummies were <b>legal to buy?</b><br>Yeah. Ordered extra.', SIG: '— Past you, who thinks ahead', STAMP: 'Stocked', H1SIZE: 44, IMG: BR },
     { DATE: 'January 2027', H1: 'Dear September-me,<br><br>Why didn\'t you order more<br>before <b>December 11?</b>', SIG: '— January-you. Awake. Annoyed.', STAMP: 'Too late', H1SIZE: 46 },
     { DATE: 'Dec 11, 2026', H1: 'Note to self:<br><br>Today the cap hit.<br><b>The cupboard\'s full.</b><br>Crisis averted.', SIG: '— You, smug', STAMP: 'Handled', H1SIZE: 46, IMG: BR },
@@ -311,10 +311,10 @@ concepts.push({ line: 'thc', id: '06-dear-january', template: 'note',
 
 // 07 Be the Friend ------------------------------------------------------
 concepts.push({ line: 'thc', id: '07-be-the-friend', template: 'night',
-  defaults: { H1SIZE: 66, H2TOP: 405, MOON: 'off', Z: 'off', IMG: WM, IMGCLASS: 'tall', CSS: ':root{--bg:#0f1f1c;--glow:rgba(31,209,176,.45);--hi:#9ff5e3;--sub:#a9c9c2}', CTA: 'Be that friend', CTA2: '→ Buy 3, Get 1 Free' },
+  defaults: { H1SIZE: 66, H2TOP: 405, MOON: 'off', Z: 'off', IMG: WM, IMGCLASS: 'tall', CSS: ':root{--bg:#0f1f1c;--glow:rgba(31,209,176,.45);--hi:#9ff5e3;--sub:#a9c9c2}', CTA: 'Be that friend', CTA2: '→' },
   variants: [
     { H1: 'Be the friend who<br><em>still has some</em> in February.', SUB: 'Stock up before <b>December 11.</b> Social currency, in gummy form.' },
-    { H1: 'Everyone\'s going to ask you.<br><em>Have an answer.</em>', SUB: 'Buy 3, get 1 free. Before <b>Dec 11.</b>', IMG: BR },
+    { H1: 'Everyone\'s going to ask you.<br><em>Have an answer.</em>', SUB: 'Stock up. Before <b>Dec 11.</b>', IMG: BR },
     { H1: 'The group chat, Dec 12:<br><em>"anyone still have gummies?"</em>', SUB: 'Be the one who does.', H1SIZE: 58, H2TOP: 380 },
     { H1: 'Generosity is easy<br><em>when you planned ahead.</em>', SUB: 'Order before <b>Dec 11.</b>', IMG: BR },
     { H1: 'Your friends will remember<br><em>who stocked up.</em>', SUB: 'Be memorable. <b>Dec 11.</b>' },
@@ -327,14 +327,14 @@ concepts.push({ line: 'thc', id: '07-be-the-friend', template: 'night',
 
 // 08 Stores Stop. You Don't. ------------------------------------------
 concepts.push({ line: 'thc', id: '08-stores-stop', template: 'cupboard',
-  defaults: { H1SIZE: 76, IMGS: CUP_THC, CSS: ':root{--em:#0d8f76}', CTA: 'Fill the cupboard', CTA2: '→ Buy 3, Get 1 Free' },
+  defaults: { H1SIZE: 76, IMGS: CUP_THC, CSS: ':root{--em:#0d8f76}', CTA: 'Fill the cupboard', CTA2: '→' },
   variants: [
     { KICKER: 'Stores stop. You don\'t.', L1: 'Shelves empty<br><span class="m">Dec 11.</span>', L2: 'Cupboards<br><span class="r">don\'t.</span>', PAY: 'Buy before the date.<br>Keep after it.' },
     { KICKER: 'The cap is for sellers.', L1: 'Their stock<br><span class="m">goes.</span>', L2: 'Your stock<br><span class="r">stays.</span>', PAY: 'What\'s home by Dec 11 is yours.' },
     { KICKER: 'Read the law, not the rumour.', L1: 'Selling ends<br><span class="m">Dec 11.</span>', L2: 'Owning<br><span class="r">doesn\'t.</span>', PAY: 'The only shelf that survives is yours.' },
     { KICKER: 'Legal today. Yours forever.', L1: 'Order<br><span class="m">now.</span>', L2: 'Own<br><span class="r">later.</span>', PAY: 'There\'s no step three.' },
     { KICKER: 'Restock closes. Stock doesn\'t.', L1: 'Last restock:<br><span class="m">Dec 11.</span>', L2: 'Your restock:<br><span class="r">the pantry.</span>', PAY: 'Fill it.' },
-    { KICKER: 'Watermelon. Blue Raspberry. Both in the cupboard.', L1: 'They lose<br>the <span class="m">aisle.</span>', L2: 'You keep<br>the <span class="r">bags.</span>', PAY: 'Buy 3, get 1 free.<br>Then keep all four.' },
+    { KICKER: 'Watermelon. Blue Raspberry. Both in the cupboard.', L1: 'They lose<br>the <span class="m">aisle.</span>', L2: 'You keep<br>the <span class="r">bags.</span>', PAY: 'Order more than one.<br>Then keep them all.' },
     { KICKER: 'Dec 11 is a shipping date.', L1: 'Not an<br><span class="m">expiry.</span>', L2: 'Not a<br><span class="r">confiscation.</span>', PAY: 'Order now.<br>Keep it all winter.' },
     { KICKER: 'The federal cap has one exception: your house.', L1: 'Shelves:<br><span class="m">capped.</span>', L2: 'Kitchens:<br><span class="r">not.</span>', PAY: 'Act like it. Dec 11.' },
     { KICKER: 'One rule.', L1: 'Buy before<br><span class="m">Dec 11.</span>', L2: 'Own after<br><span class="r">Dec 11.</span>', PAY: 'That\'s it. That\'s the ad.' },
@@ -343,7 +343,7 @@ concepts.push({ line: 'thc', id: '08-stores-stop', template: 'cupboard',
 
 // 09 The Last Harvest ---------------------------------------------------
 concepts.push({ line: 'thc', id: '09-last-harvest', template: 'doc',
-  defaults: { TAG: 'SEASON FINALE', LABEL: 'Harvest report', IMG: WM, IMGCLASS: 'tall', CSS: ':root{--bg:#0d1a12;--glow:rgba(31,184,154,.5);--lbl:#9ff5e3;--stamp:#ff2d8a;--subt:#c9f27a}', CTA: 'Get the last harvest', CTA2: '→ Buy 3, Get 1 Free' },
+  defaults: { TAG: 'SEASON FINALE', LABEL: 'Harvest report', IMG: WM, IMGCLASS: 'tall', CSS: ':root{--bg:#0d1a12;--glow:rgba(31,184,154,.5);--lbl:#9ff5e3;--stamp:#ff2d8a;--subt:#c9f27a}', CTA: 'Get the last harvest', CTA2: '→' },
   variants: [
     { H1: 'The Last<br>Legal Harvest', STAMP: 'Shipping now', SUB: '"Every bag came from the final season before the cap.<br><i>December 11 is the last day it ships."</i>' },
     { H1: 'Watermelon,<br>Final Cut', STAMP: 'Season ends Dec 11', SUB: '"What you see is the last run.<br><i>There is no spring crop."</i>' },
@@ -367,7 +367,7 @@ concepts.push({ line: 'thc', id: '10-countdown', template: 'count',
     { NUM: '45', MATH: 'Halfway to the cap. <b>Halfway to regret?</b>', IMG: BR },
     { NUM: '30', MATH: 'One month. <b>One order. Sorted.</b>' },
     { NUM: '21', MATH: 'Three weeks. <b>Shipping eats some of it.</b>', IMG: BR },
-    { NUM: '14', MATH: 'Two weeks. <b>Buy 3, get 1. Done.</b>' },
+    { NUM: '14', MATH: 'Two weeks. <b>One order. Done.</b>' },
     { NUM: '7', NUMSIZE: 700, MATH: 'One week. <b>This is the window.</b>', IMG: BR },
     { NUM: '3', NUMSIZE: 700, MATH: 'Seventy-two hours. <b>Then federally gone.</b>' },
     { NUM: '1', NUMSIZE: 700, LBL: 'DAY', MATH: 'Tomorrow it caps. <b>Tonight you order.</b>', IMG: BR, CTA: 'Order tonight' },
