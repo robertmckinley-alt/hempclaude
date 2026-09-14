@@ -6,3 +6,5 @@ ads/gen/build/
 ads/applovin-gaming/video/qa/*.mp4
 *.zip
 ads/applovin-gaming/video/test/*.mp4
+ads/fal-gaming/video-raw/
+ads/fal-gaming/video-qa/*.mp4

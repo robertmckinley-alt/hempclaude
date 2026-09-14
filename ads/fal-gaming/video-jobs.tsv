@@ -18,3 +18,47 @@ thc-07-connection-lost	01a0a1b3-656b-7b71-ab24-ac6b1fd9c2c5
 thc-08-continue	01a0a1b3-74ca-7972-8d71-ab4bbff7a156
 thc-09-cheat-code	01a0a1b3-81ab-7841-affa-ac478e3eac37
 thc-10-high-score	01a0a1b3-da2c-7703-8d60-c8c4d7b7f4af
+# wave 2
+sleep-01-level-locked	01a0a1c2-4482-7bd1-9942-194292c9262f
+sleep-02-shop-closing	01a0a1c2-5498-77c0-9bed-2469efae47c0
+sleep-04-game-over	01a0a1c2-5fdf-7570-ab0f-5f8c9bc87a1b
+sleep-06-last-slot	01a0a1c2-6ed2-7640-b7ae-54c6628a11ea
+sleep-07-connection-lost	01a0a1c2-7b4e-7272-8f0f-41a464fbe3d5
+# wave 3
+sleep-08-continue	01a0a1c3-d973-7ae1-ab63-8cf6976ffa94
+sleep-09-cheat-code	01a0a1c3-e613-7761-bc37-32504722144b
+sleep-10-high-score	01a0a1c3-f178-7460-8a3b-d67e82a1d3c6
+thc-02-shop-closing	01a0a1c3-fd6d-7691-84a2-6d431b75a85a
+thc-03-final-boss	01a0a1c4-120d-7aa0-bb22-a75f4693985b
+# diagnostics on sleep-04 (failed twice at 1080p+audio)
+sleep-04-game-over@720p	01a0a1ce-978e-7490-922e-d22084281c76
+sleep-04-game-over@1080p-noaudio	01a0a1ce-a267-7330-9a26-f76744806861
+# wave 4 - all at 720p (1080p fails partner validation on some frames)
+sleep-02-shop-closing	01a0a1d6-58a0-7813-b6a8-555b5c06761a
+sleep-05-save-game	01a0a1d6-63a7-7ae0-9e6c-05e1503de12e
+sleep-06-last-slot	01a0a1d6-70a1-7e70-bdd3-f822f99e8c76
+sleep-07-connection-lost	01a0a1d6-bafd-7a61-8267-c4d3952946a5
+sleep-08-continue	01a0a1d6-c658-78b1-87ef-aeb10f2d7347
+thc-02-shop-closing	01a0a1d7-33c6-7271-a08b-70f85af2675f
+thc-03-final-boss	01a0a1d7-9eb0-7103-bb9b-51197487b7b2
+thc-04-game-over	01a0a1d7-aa38-7da3-9cdd-a604e7e52231
+thc-06-last-slot	01a0a1d7-b653-7f21-b49f-56c47ea84eb0
+thc-09-cheat-code	01a0a1d7-c332-7870-b4ec-64289029394c
+thc-10-high-score	01a0a1d7-cfc7-77b2-afde-ae841d33f889
+# wave 5 - retry at 1080p
+sleep-02-shop-closing	01a0a1e2-c687-7611-a370-9712243fab62
+sleep-05-save-game	01a0a1e3-043b-7000-b1d5-2c899ab80ce0
+sleep-06-last-slot	01a0a1e3-68a7-7660-9909-f66b5eedd5e1
+sleep-07-connection-lost	01a0a1e3-b3b6-7350-a53c-c5fd4ca23a61
+sleep-08-continue	01a0a1e3-beb0-7aa0-bfd9-68c6c1c68368
+thc-02-shop-closing	01a0a1e4-43f6-7eb2-bb92-c09bb9d0ea83
+thc-06-last-slot	01a0a1e4-4f48-7871-a035-511674c0b917
+thc-09-cheat-code	01a0a1e4-59f9-7301-9b33-31d4dd4a9db8
+# wave 6 - stragglers on MiniMax H3 Max, 15s, loop x2 to 30s
+sleep-02-shop-closing	01a0a1ef-1d12-7212-bb1f-7ddde5f7f745	minimax
+sleep-05-save-game	01a0a1ef-2b08-79c3-87e8-fe3b63dea024	minimax
+sleep-06-last-slot	01a0a1ef-3741-7720-b671-1a03325b9248	minimax
+sleep-08-continue	01a0a1ef-4530-7c30-8d90-d8ac0a456b8d	minimax
+thc-02-shop-closing	01a0a1ef-512c-7a81-b71d-30a9f0ef776e	minimax
+thc-06-last-slot	01a0a1ef-5c52-7152-b749-0f379d732d6b	minimax
+thc-09-cheat-code	01a0a1ef-cf55-7340-ae3c-38c41d44cab0	minimax
